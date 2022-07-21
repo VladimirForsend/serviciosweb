@@ -1,0 +1,104 @@
+/* clases para la pagina de mi cuenta */
+/* login */
+#customer_login h2{
+    color: var(--color-marca-septimo);
+    font-size: var(--font-size-parrafo-xl);
+}
+.woocommerce-account .woocommerce a{
+    transition: 0.3s;
+}
+.woocommerce-account .woocommerce a:hover{
+    color: var(--color-marca-septimo);
+}
+.woocommerce-account .woocommerce .container:last-child{
+    padding-left: 0;
+    padding-right: 0;
+}
+.woocommerce-account .woocommerce button{
+    background-color: var(--color-marca-septimo);
+    color: white;
+    border-radius: 0;
+    transition: 0.3s;
+}
+.woocommerce-account .woocommerce button:hover{
+    background-color: var(--color-marca-segundo);
+    color: white;
+}
+.woocommerce-account .woocommerce input{
+    padding: 7px 10px;
+}
+/* cuenta */
+.woocommerce-account .woocommerce{
+    font-size: var(--font-size-parrafo-md);
+}
+.woocommerce-MyAccount-navigation li{
+    padding: 5px;
+    border-bottom: 1px solid #282828;
+}
+.woocommerce-MyAccount-navigation li a{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+}
+.woocommerce-MyAccount-navigation li a::after{
+    content: "";
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    width: 20px;
+    opacity: 0.5;
+}
+.woocommerce-MyAccount-navigation .woocommerce-MyAccount-navigation-link--dashboard a::after{
+    content: "\f3fd";
+}
+.woocommerce-MyAccount-navigation .woocommerce-MyAccount-navigation-link--orders a::after{
+    content: "\f291";
+}
+.woocommerce-MyAccount-navigation .woocommerce-MyAccount-navigation-link--downloads a::after{
+    content: "\f1c6";
+}
+.woocommerce-MyAccount-navigation .woocommerce-MyAccount-navigation-link--edit-address a::after{
+    content: "\f015";
+}
+.woocommerce-MyAccount-navigation .woocommerce-MyAccount-navigation-link--edit-account a::after{
+    content: "\f007";
+}
+.woocommerce-MyAccount-navigation .woocommerce-MyAccount-navigation-link--customer-logout a::after{
+    content: "\f2f5";
+}
+.woocommerce-MyAccount-navigation li.is-active a::after{
+    opacity: 1;
+}
+.woocommerce-account .woocommerce .woocommerce-Button{
+    background-color: var(--color-marca-septimo);
+    color: white;
+    border: none;
+    border-radius: 0;
+    transition: 0.3s;
+}
+.woocommerce-account .woocommerce .woocommerce-Button:hover{
+    background-color: var(--color-marca-segundo);
+    color: white;
+}
+.woocommerce-MyAccount-content h3{
+    font-size: var(--font-size-parrafo-xl);
+}
+.woocommerce-MyAccount-content label{
+    font-weight: bold;
+}
+.woocommerce-Addresses .edit{
+    color: var(--color-marca-segundo);
+}
+.woocommerce-account .col-1{
+    max-width: initial;
+}
+/* seccion de contraseña perdida */
+.lost_reset_password{
+    font-size: var(--font-size-parrafo-md);
+}
+.lost_reset_password label{
+    font-weight: bold;
+}

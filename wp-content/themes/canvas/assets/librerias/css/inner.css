@@ -1,0 +1,198 @@
+/* ////////////////// clases pagina atractivos //////////////////// */
+#SeccionAtract .titulo, #SeccionSoc .titulo, #SeccionMapa .titulo, #PaginaSocios .titulo{
+    font-family: var(--font-fam-segundo);
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 0;
+}
+#SeccionMapa .mapa p{
+    margin-bottom: 0;
+    width: 100%;
+}
+#SeccionMapa .mapa iframe{
+    width: 100%;
+    border: none;
+    max-height: 375px;
+}
+/* ////////////////// clases singles interiores //////////////////// */
+#SingleSocios .header .altura-header, #SingleAtractivos .header .altura-header{
+    height: 66.5vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+#SingleSocios .header .ubicacion, #SingleAtractivos .header .ubicacion{
+    font-size: 26px;
+}
+#SingleSocios .header .titulo, #SingleAtractivos .header .titulo{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: var(--font-fam-segundo);
+    margin-bottom: 20px;
+}
+#SingleSocios .header .texto, #SingleAtractivos .header .texto{
+    font-size: 15px;
+    line-height: 1.2;
+}
+#SingleSocios #SeccionPrincipal .titulo, #SingleAtractivos #SeccionPrincipal .titulo{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: var(--font-fam-segundo);
+    margin-bottom: 20px;
+}
+#SingleSocios #SeccionPrincipal #Desplegables .boton-desplegable, #SingleAtractivos #SeccionPrincipal #Desplegables .boton-desplegable{
+    border: none;
+    background-color: white;
+    text-align: left;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: var(--font-fam-segundo);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#SingleAtractivos #SeccionPrincipal #Desplegables .boton-desplegable{
+    margin-bottom: 0;
+}
+#SeccionPrincipal #Desplegables .boton-desplegable::after{
+    content: "\f0d7";
+    display: inline-block;
+    text-align: right;
+    font-weight: 900;
+    font-size: inherit;
+    color: var(--color-marca-tercero);
+    font-family: "Font Awesome 5 Free";
+}
+#SingleSocios #SeccionPrincipal #Desplegables .contenido{
+    font-size: 20px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+#SingleAtractivos #SeccionPrincipal #Desplegables .contenido{
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    border-top: 2px solid var(--color-marca-cuarto);
+}
+#SingleSocios #SeccionPrincipal .imagenes .contenedor-imagen-bg, #SingleAtractivos #SeccionPrincipal .imagenes .contenedor-imagen-bg{
+    border-radius: 15px;
+}
+#SingleSocios #SeccionPrincipal .imagenes .small, #SingleAtractivos #SeccionPrincipal .imagenes .small{
+    height: 265px;
+}
+#SingleSocios #SeccionPrincipal .imagenes .big, #SingleAtractivos #SeccionPrincipal .imagenes .big{
+    height: 550px;
+}
+#SingleSocios #SeccionSecundaria .titulo, #SingleAtractivos #SeccionSecundaria .titulo{
+    text-transform: uppercase;
+    font-size: 32px;
+    font-family: var(--font-fam-segundo);
+    margin-bottom: 20px;
+}
+#SingleSocios #SeccionSecundaria .media{
+    max-width: 450px;
+    max-height: 450px;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#SingleSocios .imagen-secundaria, #SingleAtractivos .imagen-secundaria{
+    height: 450px;
+    border-radius: 15px;
+}
+/* ////////////////// clases pagina contacto y somos //////////////////// */
+#PaginaContacto .entrada, #PaginaSomos .entrada{
+    height: 30vh;
+}
+#PaginaContacto #SeccionUno .titulo, #PaginaSomos #SeccionUno .titulo{
+    font-size: 40px;
+    font-family: var(--font-fam-segundo);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#PaginaContacto #SeccionUno .texto, #PaginaSomos #SeccionUno .texto{
+    font-size: 15px;
+    line-height: 1.2;
+}
+#PaginaSomos #SeccionDos .contenedor-imagen-bg{
+    height: 250px;
+}
+#PaginaContacto #SeccionDos .titulo{
+    font-size: 32px;
+    font-family: var(--font-fam-segundo);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#PaginaContacto #SeccionDos .mapa{
+    overflow: hidden;
+    border-radius: 15px;
+}
+#PaginaContacto #SeccionDos .dato{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#PaginaContacto #SeccionDos .contacto i{
+    width: 30px;
+    font-size: 22px;
+    color: var(--color-marca-quinto);
+    margin-right: 10px;
+}
+#PaginaContacto #SeccionDos #menu-rrss{
+    font-size: 25px;
+}
+#PaginaSomos #SeccionDos h3{
+    font-size: 32px;
+    font-family: var(--font-fam-segundo);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.informacion-socios .web{
+    text-decoration-line: underline;
+}
+.informacion-socios .socios-rrss i{
+    font-size: 25px;
+    transition: 0.3s;
+    font-weight: bold;
+    padding: 3px 7px;
+}
+.informacion-socios .socios-rrss i:hover{
+    transform: scale(110%);
+}
+.playbutton{
+    z-index: 1;
+    width: 70px;
+    transition: 0.3s;
+}
+.video:hover .playbutton{
+    transform: scale(120%);
+}
+/* ////////////////// clases entradas (noticias) //////////////////// */
+.bg-news{
+    background-size: cover !important;
+}
+#SinglePost .entrada{
+    height: 35vh;
+}
+#SinglePost .titulo{
+    font-size: 40px;
+    font-family: var(--font-fam-segundo);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#SinglePost .texto{
+    font-size: 15px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    border-top: 1px solid rgba(255,255,255,0.7);
+    padding-top: 10px;
+}

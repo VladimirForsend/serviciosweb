@@ -1,0 +1,38 @@
+#SinglePost #ContentPost{
+    padding-bottom: 100px;
+}
+#SinglePost #ContentPost h2, #SinglePost #ContentPost h3{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--font-fam-segundo);
+    margin-bottom: 20px;
+}
+#SinglePost #ContentPost h3{
+    font-size: 24px;
+}
+#SinglePost #ContentPost .contenido p{
+    margin-bottom: 20px;
+}
+#SinglePost #ContentPost .contenedor-imagen-bg{
+    min-height: 300px;
+    margin-bottom: 20px;
+}
+#SinglePost #ContentPost a{
+    color: var(--color-marca-cuarto);
+}
+#SinglePost #ContentPost .boton{
+    background-color: var(--color-marca-segundo);
+    color: white;
+    padding: 7px 30px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+#SinglePost #ContentPost .boton:hover{
+    background-color: var(--color-marca-primero);
+    text-decoration-line: none !important;
+}
+#SinglePost #ContentPost .topline{
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+}

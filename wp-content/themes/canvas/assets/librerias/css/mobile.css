@@ -1,0 +1,69 @@
+/* ajustes mobile */
+
+@media (min-width:397px) and (max-width: 768px) {
+    
+}
+@media (max-width: 450px){
+    
+}
+@media (max-width: 350px){
+    
+}
+/* punto de quiebre bootstrap - xl */
+@media (max-width: 1200px){
+
+}
+/* punto de quiebre bootstrap - lg */
+@media (max-width: 992px){
+    #SeccionEntrada .entrada{
+        font-size: 60px;
+    }
+}
+/* punto de quiebre bootstrap - md */
+@media (max-width: 768px) {
+    .izquierdo, .derecho{
+        padding: 50px 15px 50px 15px;
+    }
+    #SingleSocios .header .titulo, #SingleAtractivos .header .titulo{
+        font-size: 40px;
+    }
+    #SingleSocios #SeccionPrincipal .titulo, #SingleAtractivos #SeccionPrincipal .titulo{
+        font-size: 32px;
+    }
+}
+/* punto de quiebre bootstrap - sm */
+@media (max-width: 576px){
+    #SeccionBusqueda .imagenes .contenedor-imagen-bg{
+        height: 200px;
+    }
+    #SeccionEntrada .entrada{
+        font-size: 50px;
+        margin-bottom: 25px;
+    }
+    #SeccionEntrada .texto{
+        font-size: 14px;
+        margin-bottom: 25px;
+        line-height: 1;
+    }
+    #SeccionEntrada .row-fix{
+        max-width: unset;
+    }
+    #SeccionEntrada .destino{
+        height: 150px;
+    }
+    #FooterBasico .menu-footer ul#menu-menu-principal{
+        flex-direction: column;
+    }
+}
+@media (max-width: 450px){
+    .slick-initialized .slick-slide {
+        max-width: unset;
+        margin-right: 0;
+    }
+}
+@media (min-width: 900px){
+	.visible{
+		left: 30% !important;
+		width: 40% !important;
+	}
+}
