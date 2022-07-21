@@ -26,8 +26,7 @@
 
 .slick-slider {
     position: relative;
-    display: flex;
-    align-items: center;
+    display: block;
     box-sizing: border-box;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -46,7 +45,6 @@
     overflow: hidden;
     margin: 0;
     padding: 0;
-    min-width: 300px;
 }
 
 .slick-list:focus {
@@ -72,6 +70,7 @@
     top: 0;
     left: 0;
     display: block;
+    min-height: 325px;
 }
 
 .slick-track:before,
@@ -91,7 +90,7 @@
 .slick-slide {
     display: none;
     float: left;
-    height: 100%;
+    height: 98%;
     min-height: 1px;
 }
 
@@ -113,8 +112,6 @@
 
 .slick-initialized .slick-slide {
     display: block;
-    max-width: 350px;
-    margin-right: 20px;
 }
 
 .slick-loading .slick-slide {
@@ -133,62 +130,3 @@
 
 
 /*slider fluid*/
-/* controles del slider */
-.slick-slider .slick-list{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.slick-slider .slick-arrow{
-    position: absolute;
-    border: none;
-    font-size: 0;
-    width: 35px;
-    min-width: 35px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    z-index: 500;
-    align-items: center;
-    background-color: var(--color-marca-sexto);
-    border-radius: 100%;
-    transition: 0.3s;
-}
-.slick-slider .slick-arrow:hover{
-    transform: scale(110%);
-}
-.slick-slider .slick-prev{
-    right: auto;
-    left: -5vw;
-}
-.slick-slider .slick-prev::after{
-    content: "\f0d9";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    padding: .5rem;
-    font-size: var(--font-size-titulo-md);
-    line-height: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    text-transform: uppercase;
-    color: white;
-}
-.slick-slider .slick-next{
-    right: -5vw;
-}
-.slick-slider .slick-next::after{
-    content: "\f0da";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    padding: .5rem;
-    font-size: var(--font-size-titulo-md);
-    line-height: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    text-transform: uppercase;
-    color: white;
-}
