@@ -275,10 +275,6 @@
         color: #fff !important;
     }
     
-    .navbar-brand {
-        height: 80px;
-    }
-    
     .navbar-brand a {
         height: 100%;
     }
@@ -288,7 +284,6 @@
     }
     
     .navbar-brand img {
-        height: 100%;
         width: auto;
     }
     /*botones*/

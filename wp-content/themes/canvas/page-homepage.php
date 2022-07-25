@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Pagina Noticias
+ * Template Name: Pagina de inicio
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -13,10 +13,19 @@
  * @package ecommerce
  */
 
-get_header();
+get_header('');
  ?>
 <main id="primary" class="">
+      
+        <!-- CAROUSEL HOME -->
+        <?php
+            include get_template_directory() . '/assets/modulos/modulo-slider/slider.php';
+        ?>
 
+        <!-- CAROUSEL HOME -->
+        <?php
+            include get_template_directory() . '/assets/modulos/modulo-boxinfo/loop-modulo-boxinfo.php';
+        ?>
    
         <?php
         if (have_posts()) :
@@ -37,7 +46,7 @@ get_header();
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
-                get_template_part('template-parts/content-noticias', get_post_type());
+                get_template_part('template-parts/content-home-page', get_post_type());
 
             endwhile;
 

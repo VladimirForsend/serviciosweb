@@ -1,11 +1,11 @@
 :root {
-    --titan-typo: 'Lato', sans-serif;
-    --titan-title-typo: 'Lato', sans-serif;
+    --titan-typo: 'Monserrat', sans-serif;
+    --titan-title-typo: 'Montserrat', sans-serif;
     --color-azul: #3483fa;
     --color-contraste-blanco: #fff;
     --color-contraste-negro: #000;
     --color-carbon: #1e1e1e;
-    --color-cliente: #fe2b4e; /* color de la marca */
+    --color-cliente: #6200f; /* color de la marca */
     --color-disponible: #28A745;
     --color-verde-base: #8fca00;
     --color-texto: #767676;

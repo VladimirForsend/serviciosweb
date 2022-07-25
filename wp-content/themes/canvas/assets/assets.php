@@ -5,7 +5,6 @@
  */
 
 include get_template_directory() . '/assets/customizer/comercio-color-icon.php';
-include get_template_directory() . '/assets/woocommerce/funciones_woocommerce.php';
 
 /*assets styles*/
 add_post_type_support('page', 'excerpt');
@@ -25,10 +24,6 @@ function comercio_framework()
     wp_register_style('ficha-producto', get_template_directory_uri() . '/assets/librerias/css/ficha-producto.css', 'all');
     wp_register_style('mobile', get_template_directory_uri() . '/assets/librerias/css/mobile.css', 'all');
 
-
-
-
-
     wp_enqueue_style('iconos');
     wp_enqueue_style('fuentes');
     wp_enqueue_style('root');
@@ -39,14 +34,9 @@ function comercio_framework()
     wp_enqueue_style('mobile');
 }
 
-
 add_action('wp_enqueue_scripts', 'comercio_framework');
 
-
 /*assets styles*/
-
-
-
 
 /*assets scripts*/
 
@@ -59,21 +49,17 @@ function comercio_script()
 
         // Register the script like this for a theme:
 
-    wp_register_script('comercio-js', get_bloginfo('template_directory') . '/assets/librerias/js/titan.js', array('jquery'), '1', false);
-       wp_register_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js', false, true);
+        wp_register_script('comercio-js', get_bloginfo('template_directory') . '/assets/librerias/js/titan.js', array('jquery'), '1', false);
+        wp_register_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js', false, true);
         wp_register_script('slider-fluid', get_bloginfo('template_directory') . '/assets/librerias/js/slick.js', array('jquery'), '1', true);
         wp_register_script('parallax', get_bloginfo('template_directory') . '/assets/librerias/js/parallax.js', array('jquery'), '1', false);
-        
-        
+          
         /*encolamos los JS*/
         wp_enqueue_script('comercio-js', array('jquery'), true);
         wp_enqueue_script('bootstrap-js');
         wp_enqueue_script('parallax');
         wp_enqueue_script('slider-fluid');
 
-        
-        
-        
     }
 }
 add_action("wp_enqueue_scripts", "comercio_script", 1);
@@ -126,7 +112,6 @@ add_filter('nav_menu_css_class', 'atg_menu_classes', 1, 3);
 // Register Navigation Menus
 function menu_categoria()
 {
-
     $locations = array(
         'menu-categoria' => __('menu-categoria', 'menu-categoria'),
     );
@@ -194,19 +179,14 @@ add_filter('excerpt_length', 'tn_custom_excerpt_length', 999);
 
 //Regiones.
 //
-include get_template_directory() . '/assets/regiones-chile.php';
 include get_template_directory() . '/assets/modulos/modulo-slider/core-slider.php';
 include get_template_directory() . '/assets/modulos/modulo-carrusel-ofertas/core-carrusel-ofertas.php';
 include get_template_directory() . '/assets/modulos/modulo-microbox/core-microbox.php';
-include get_template_directory() . '/assets/woocommerce/campos-woocommerce.php';
 include get_template_directory() . '/assets/modulos/modulo-parallax-block/core-parallax-block.php';
 include get_template_directory() . '/assets/modulos/modulo-carrusel-logos/core-carrusel-logo.php';
 include get_template_directory() . '/assets/modulos/modulo-infobox/core-infobox.php';
-include get_template_directory() . '/assets/modulos/modulo-contador/core-contador.php';
 include get_template_directory() . '/assets/modulos/modulo-multibanner2/core-multibanner2.php';
 include get_template_directory() . '/assets/modulos/modulo-multibanner/core-multibanner.php';
-include get_template_directory() . '/assets/modulos/modulo-multibanner3/core-multibanner3.php';
-include get_template_directory() . '/assets/modulos/modulo-categorias-oferta/core-categorias-oferta.php';
 include get_template_directory() . '/assets/modulos/modulo-boxinfo/core-modulo-boxinfo.php';
 
 //widget wsapp

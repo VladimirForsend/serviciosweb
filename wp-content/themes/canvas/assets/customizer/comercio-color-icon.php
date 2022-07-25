@@ -3,10 +3,9 @@ add_action('customize_register', 'color_icono');
 function color_icono($wp_customize)
 {
 
-
     //seccion customizer
     $wp_customize->add_section('color_icono', array(
-        'title'      => 'configurar colores de comercio',
+        'title'      => 'Configurar colores del sitio',
         'priority'   => 30,
     ));
     //seccion customizer
@@ -356,8 +355,6 @@ function titan_sanitize_fuente($value)
     return $value;
 }
 
-
-
 /**
  * Register our required fonts.
  */
@@ -382,7 +379,6 @@ function titan_customize_fuentes_url()
     ), '//fonts.googleapis.com/css');
 }
 
-
 /**
  * Enqueue fonts
  */
@@ -391,7 +387,6 @@ function mytheme_site_font_scripts_styles()
     wp_enqueue_style('site-fonts', titan_customize_fuentes_url(), array(), null);
 }
 add_action('wp_enqueue_scripts', 'mytheme_site_font_scripts_styles');
-
 
 
 /**
@@ -435,164 +430,3 @@ function mytheme_site_title_logo_css()
 }
 add_action('wp_head', 'mytheme_site_title_logo_css');
 
-
-add_action('customize_register', 'color_ficha_producto');
-function color_ficha_producto($wp_customize)
-{
-
-
-    //seccion customizer
-    $wp_customize->add_section('color_ficha_producto', array(
-        'title'      => 'Configuración ficha de producto',
-        'priority'   => 30,
-    ));
-
-    /* settings color de texto botones ficha producto*/
-
-
-    $wp_customize->add_setting('color_texto_producto', array(
-        'default'     => '#43C6E4',
-        'transport'   => 'refresh',
-    ));
-
-    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'color_texto_producto', array(
-        'label'        => 'colores textos ficha de productos',
-        'section'    => 'color_ficha_producto',
-        'settings'   => 'color_texto_producto',
-    )));
-    /* settings color de texto botones ficha producto*/
-
-
-    /* settings color oferta*/
-
-
-    $wp_customize->add_setting('color_fondo_onsale', array(
-        'default'     => '#43C6E4',
-        'transport'   => 'refresh',
-    ));
-
-    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'color_fondo_onsale', array(
-        'label'        => 'Color etiqueta ofertas',
-        'section'    => 'color_ficha_producto',
-        'settings'   => 'color_fondo_onsale',
-    )));
-    /* settings color oferta*/
-
-    /* settings color_boton_carro*/
-
-
-    $wp_customize->add_setting('color_boton_carro', array(
-        'default'     => '#43C6E4',
-        'transport'   => 'refresh',
-    ));
-
-    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'color_boton_carro', array(
-        'label'        => 'Color boton carro',
-        'section'    => 'color_ficha_producto',
-        'settings'   => 'color_boton_carro',
-    )));
-    /* settings color_boton_carro*/
-
-    /* settings color_disponibilidad*/
-
-
-    $wp_customize->add_setting('color_disponibilidad', array(
-        'default'     => '#43C6E4',
-        'transport'   => 'refresh',
-    ));
-
-    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'color_disponibilidad', array(
-        'label'        => 'Color etiqueta  disponibilidad',
-        'section'    => 'color_ficha_producto',
-        'settings'   => 'color_disponibilidad',
-    )));
-    /* settings color_disponibilidad*/
-
-
-    /* settings color_categoria*/
-
-
-    $wp_customize->add_setting('color_categoria', array(
-        'default'     => '#43C6E4',
-        'transport'   => 'refresh',
-    ));
-
-    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'color_categoria', array(
-        'label'        => 'Color etiqueta categorias',
-        'section'    => 'color_ficha_producto',
-        'settings'   => 'color_categoria',
-    )));
-    /* settings color_categoria*/
-
-    /* settings color_texto_categoria*/
-
-
-    $wp_customize->add_setting('color_texto_categoria', array(
-        'default'     => '#43C6E4',
-        'transport'   => 'refresh',
-    ));
-
-    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'color_texto_categoria', array(
-        'label'        => 'Color texto, botón, disponibilidad, categoría',
-        'section'    => 'color_ficha_producto',
-        'settings'   => 'color_texto_categoria',
-    )));
-    /* settings color_texto_categoria*/
-}
-
-add_action('wp_head', 'color_producto_titan');
-
-
-function color_producto_titan()
-{
-?>
-    <style type="text/css">
-        /*ficha de producto*/
-        .tipo-entrega-nueva h5,
-        .tipo-entrega-nueva h6,
-        .tipo-entrega-nueva i,
-        .tipo--entrega--in i,
-        .single.single-product.woocommerce .product .product_titlel,
-        .title-sku_wrapper,
-        .single-product.single .price {
-            color: <?php echo get_theme_mod('color_texto_producto', '#000000'); ?>;
-        }
-
-        .lista-productos .onsale,
-        .single-product.single.woocommerce span.onsale, ul.products li.product .comercio-product-card .tarjeta-producto-superior .onsale{
-            background-color: <?php echo get_theme_mod('color_fondo_onsale', '#000000'); ?>;
-
-        }
-
-
-        .woocommerce.single-product.single div.product form.cart .single_add_to_cart_button,
-        .lista-productos a.button {
-            background-color: <?php echo get_theme_mod('color_boton_carro', '#000000'); ?>;
-        }
-
-        .stock.in-stock {
-            background-color: <?php echo get_theme_mod('color_disponibilidad', '#000000'); ?>;
-        }
-
-        .tagged_as a,
-        .posted_in a,
-        .tagged_as a:hover,
-        .posted_in a:hover {
-            background-color: <?php echo get_theme_mod('color_categoria', '#000000'); ?>;
-        }
-
-        .tagged_as a,
-        .posted_in a,
-        p.stock.in-stock,
-        .woocommerce.single-product.single div.product form.cart .single_add_to_cart_button {
-            text-decoration: none;
-            color: <?php echo get_theme_mod('color_texto_categoria', '#000000'); ?>;
-        }
-
-
-
-
-        /*ficha de producto*/
-    </style>
-<?php
-}

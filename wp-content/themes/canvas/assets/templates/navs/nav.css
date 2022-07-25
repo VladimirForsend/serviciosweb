@@ -1,3 +1,54 @@
+/* LOGO */
+.navbar-brand {
+    margin: 0;
+}
+
+header#masthead.comercio-header.site-header button.login-senior {
+    color: #6200ff;
+    background: transparent;
+    border: 2px solid #6200ff;
+    line-height: 1;
+    padding: 0 1rem;
+    margin: 0 0.5rem 0 0rem;
+    height: 40px;
+}
+
+header#masthead.comercio-header.site-header button.login-senior a {
+    color: #6200ff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
+}
+
+header#masthead.comercio-header.site-header button.register-senior {
+    color: #ffffff;
+    background-color: #6200ff;
+    border-color: #6200ff;
+    line-height: 1;
+    padding: 0 1rem;
+    margin: 0 0.5rem 0 0rem;
+    height: 40px;
+}
+
+header#masthead.comercio-header.site-header button.register-senior a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
+}
+
+header#masthead.comercio-header.site-header button.register-senior:hover, header#masthead.comercio-header.site-header button.login-senior {
+    background-color: #96ff00;
+    box-shadow: 3px 3px 5px rgba(149, 255, 0, 0.289);
+    border: #96ff00;
+}
+
+header#masthead.comercio-header.site-header button.login-senior:hover a, header#masthead.comercio-header.site-header button.register-senior:hover a {
+    color: #6200ff!important;
+}
+
 .boton-menu-desk {
     background-color: unset;
     border: unset;
@@ -102,78 +153,12 @@
     height: calc(5vh - 0.1vh);
 }
 
-
-/*carrito*/
-
-body.xoo-wsc-active,
-html.xoo-wsc-active {
-    overflow: inherit;
+.nav-mobile {
+    display: none;
 }
 
-.xoo-wsc-basket {
-    padding: 0px;
-    margin: 0px;
-    top: 0px;
-    right: 0px;
-    border-radius: 5px;
-    position: relative;
-    -webkit-box-shadow: 0 0 0 0 #ffffff;
-    box-shadow: 0 0 0 0 #ffffff;
-    z-index: 9!important;
+@media (max-width:900px) {
+    .nav-mobile {
+        display: block;
+    }
 }
-
-.xoo-wsc-items-count {
-    color: #fefefe;
-    font-size: 1rem;
-    font-weight: 900;
-}
-
-.mini-carrito:hover .xoo-wsc-items-count {
-    filter: invert(1);
-    font-size: 1rem;
-    font-weight: 900;
-}
-
-.xoo-wsc-icon-basket1::before {
-    content: "\f07a";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    padding: 10px;
-    font-size: 1rem;
-    line-height: 1;
-    border: var(--color-secundario-cliente);
-    border-radius: 0.25rem;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    text-transform: uppercase;
-}
-
-.xoo-wsc-icon-basket1:hover::before {
-    content: "\f07a";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    padding: 10px;
-    font-size: 1rem;
-    line-height: 1;
-    background-color: var(--color-hover-cliente);
-    border: var(--color-hover-cliente);
-    border-radius: 0.25rem;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    text-transform: uppercase;
-}
-
-.xoo-wsc-footer a.button {
-    margin: 4px 0px;
-    background-color: var(--color-cliente);
-    color: #fff;
-}
-
-
-/*carrito*/

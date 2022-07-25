@@ -18,8 +18,7 @@
                 $fundaciones_description = get_bloginfo('description', 'display');
                 if ($fundaciones_description || is_customize_preview()) :
                 ?>
-                    <p class="site-description"><?php echo $fundaciones_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
-                                                ?></p>
+                    <p class="site-description"><?php echo $fundaciones_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
                 <?php endif; ?>
                 </div>
           
@@ -44,7 +43,7 @@
                 );
                 ?>
  
-<?php if ( function_exists( 'aws_get_search_form' ) ) { aws_get_search_form( true, array( 'id' => '62968e5c35f00' ) ); } ?>
+                <?php if ( function_exists( 'aws_get_search_form' ) ) { aws_get_search_form( true, array( 'id' => '62968e5c35f00' ) ); } ?>
             </div>
         </div>
     </div>
