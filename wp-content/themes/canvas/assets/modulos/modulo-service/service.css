@@ -1,0 +1,57 @@
+.preguntas-frecuentes .elemento{
+    margin-bottom: 15px;
+}
+.preguntas-frecuentes .elemento .boton{
+    position: relative;
+    outline: none;
+    width: 100%;
+    background-color: transparent !important;
+    color: black !important;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-marca-cuarto);
+    padding: 3px 15px;
+    padding-right: 45px;
+    text-align: left;
+    transition: 0.3s;
+}
+.preguntas-frecuentes .elemento .boton::after{
+    content: "-";
+    position: absolute;
+    right: 25px;
+    font-size: 35px;
+}
+.preguntas-frecuentes .elemento .boton.collapsed::after{
+    content: "+";
+    font-size: 25px;
+}
+.preguntas-frecuentes .elemento .boton:hover{
+    background-color: var(--color-marca-sexto) !important;
+}
+.preguntas-frecuentes .elemento .boton .numero{
+    width: 35px;
+    font-weight: bold;
+}
+.preguntas-frecuentes .elemento .boton .pregunta{
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 1vw;
+}
+.preguntas-frecuentes .elemento .respuesta{
+    padding: 5px 5vw;
+    font-size: 16px;
+}
+.preguntas-frecuentes .separador{
+    border-bottom: 2px solid var(--color-marca-sexto);
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+}
+#moduloservicea.preguntas-frecuentes .elemento .boton{
+    background-color: var(--color-marca-primero) !important;
+    color: white !important;
+    border-color: var(--color-marca-primero) !important;
+}
+#moduloservicea.preguntas-frecuentes .elemento .boton:hover{
+    background-color: var(--color-marca-segundo) !important;
+    border-color: var(--color-marca-segundo) !important;
+}

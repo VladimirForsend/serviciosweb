@@ -29,7 +29,7 @@ get_header('');
 
         <!-- SERVICIOS / SECCION 3 -->
         <?php
-            include get_template_directory() . '/assets/modulos/modulo-infobox/loop-modulo-infobox.php';
+            include get_template_directory() . '/assets/modulos/modulo-service/service.php';
         ?>
 
         <!-- ESTAMOS INTEGRADOS A / SECCION 4 -->

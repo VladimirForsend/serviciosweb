@@ -63,6 +63,24 @@
                 <img class="imagen" src="<?php echo esc_url($imagen12['url']); ?>" alt="<?php echo esc_attr($imagen12['alt']); ?>">
             </a>
         </div>
+        <div class="row banner mb-3">
+            <a class="logos-card col-12 col-md-6 col-lg-3">  
+                <?php $imagen13 = get_field('logo_plataforma_13'); ?>
+                <img class="imagen" src="<?php echo esc_url($image13['url']); ?>" alt="<?php echo esc_attr($imagen13['alt']); ?>">
+            </a>
+            <a class="logos-card col-12 col-md-6 col-lg-3">  
+                <?php $imagen14 = get_field('logo_plataforma_14'); ?>
+                <img class="imagen" src="<?php echo esc_url($imagen14['url']); ?>" alt="<?php echo esc_attr($imagen14['alt']); ?>">
+            </a>
+            <a class="logos-card col-12 col-md-6 col-lg-3">  
+                <?php $imagen15 = get_field('logo_plataforma_15'); ?>
+                <img class="imagen" src="<?php echo esc_url($imagen15['url']); ?>" alt="<?php echo esc_attr($imagen15['alt']); ?>">
+            </a>
+            <a class="logos-card col-12 col-md-6 col-lg-3">  
+                <?php $imagen16 = get_field('logo_plataforma_16'); ?>
+                <img class="imagen" src="<?php echo esc_url($imagen16['url']); ?>" alt="<?php echo esc_attr($imagen16['alt']); ?>">
+            </a>
+        </div>
             
     </div>
 </div>
