@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+header#masthead.comercio-header.site-header .menu-item a:hover {
+    color: #6200ff;
+}
+
 header#masthead.comercio-header.site-header button.login-senior {
     color: #6200ff;
     background: transparent;
@@ -11,6 +15,7 @@ header#masthead.comercio-header.site-header button.login-senior {
     padding: 0 1rem;
     margin: 0 0.5rem 0 0rem;
     height: 40px;
+    transition: all .3s;
 }
 
 header#masthead.comercio-header.site-header button.login-senior a {
@@ -29,6 +34,7 @@ header#masthead.comercio-header.site-header button.register-senior {
     padding: 0 1rem;
     margin: 0 0.5rem 0 0rem;
     height: 40px;
+    transition: all .3s;
 }
 
 header#masthead.comercio-header.site-header button.register-senior a {
@@ -39,10 +45,10 @@ header#masthead.comercio-header.site-header button.register-senior a {
     line-height: 1;
 }
 
-header#masthead.comercio-header.site-header button.register-senior:hover, header#masthead.comercio-header.site-header button.login-senior {
+header#masthead.comercio-header.site-header button.register-senior:hover, header#masthead.comercio-header.site-header button.login-senior:hover {
     background-color: #96ff00;
-    box-shadow: 3px 3px 5px rgba(149, 255, 0, 0.289);
-    border: #96ff00;
+    box-shadow: 1px 1px 3px rgb(115 194 4 / 70%);
+    border: 2px solid #96ff00;
 }
 
 header#masthead.comercio-header.site-header button.login-senior:hover a, header#masthead.comercio-header.site-header button.register-senior:hover a {
@@ -77,20 +83,29 @@ header#masthead.comercio-header.site-header button.login-senior:hover a, header#
     flex-direction: row;
 }
 
-.linea-hamburguesa {
+span.linea-hamburguesa {
+    background-color: #6200ff;
     display: block;
     position: relative;
     left: unset;
-    width: 2rem;
+    width: 100%;
     height: 2px;
     border-radius: 0.25rem;
     transition-timing-function: ease;
     transition-duration: 0.2s;
     transition-property: transform, opacity;
-    margin: 0 10px 5px 0;
+    margin: 5px 10px 0 0;
     padding: 0;
     border: none;
     top: unset;
+}
+
+.dropdown {
+    position: absolute;
+    background: white;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    display: none;
 }
 
 .dropdown-menu .dropdown-submenu {
@@ -151,14 +166,28 @@ header#masthead.comercio-header.site-header button.login-senior:hover a, header#
 
 .pop-menu .menu-item {
     height: calc(5vh - 0.1vh);
+    display: flex;
+    align-items: center;
 }
 
 .nav-mobile {
     display: none;
 }
 
+header#masthead.comercio-header.site-header .bold.primary-color a{
+    color: #6200ff;
+    font-weight: 800;
+}
+
 @media (max-width:900px) {
     .nav-mobile {
         display: block;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: #6200ff;
+        border: none;
+        width: 50px;
+        padding: 0.8rem 0.75rem;
     }
 }

@@ -7,7 +7,7 @@
         <!---row-->
         <div class="row w-100">
             <!---navbrand-->
-            <div class="navbar-brand col-3 col-md-2">
+            <div class="navbar-brand col-3 col-md-2 ps-4">
 
                 <?php
                 the_custom_logo();
@@ -39,7 +39,7 @@
                     array(
                         'theme_location' => 'menu-superior',
                         'menu_id'        => 'navbar',
-                        'menu_class'     => 'navbar-nav m-auto nav-menu d-flex justify-content-between w-100 px-3',
+                        'menu_class'     => 'navbar-nav pop-menu m-auto nav-menu d-flex justify-content-around w-100 px-3',
                         'container_class' => 'nav col-12 col-md-8',
                     )
                 );

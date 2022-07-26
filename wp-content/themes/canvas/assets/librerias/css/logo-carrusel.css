@@ -6,10 +6,7 @@
     height: 160px;
     overflow: hidden;
     border-radius: 5px;
-
 }
-
-
 
 #carrusel_logos .carrusel-interior {
     outline: none;
@@ -22,21 +19,21 @@
     border: 0px solid transparent;
 }
   
-   #carrusel_logos .carousel-inner {
+#carrusel_logos .carousel-inner {
     height: 165px;
     margin-top: 15px;
     width: 100%;
 }
-  #carrusel_logos .carousel-item {
-      height: 10rem;
-      background-size: cover;
-      background-repeat: no-repeat;
-      justify-content: center;
-      align-items: center;
-  }
 
+#carrusel_logos .carousel-item {
+    height: 10rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
 
-  #carrusel_logos .carousel-control-prev {
+#carrusel_logos .carousel-control-prev {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -53,31 +50,26 @@
 }
 
 #carrusel_logos .carousel-control-prev-icon {
-  
     width: 30px;
     height: 90px;
     border-top: 0px solid #000;
- border:0px;
+    border:0px;
     display:flex;
     justify-content:center;
-     align-items: center;
-     background-color: #fff;
-background-image: none;
-position: absolute;
+    align-items: center;
+    background-color: #fff;
+    background-image: none;
+    position: absolute;
 }
 
-
-
-
-
 #carrusel_logos .carousel-control-next{
-   position: absolute;
+    position: absolute;
     top: 0;
     bottom: 0;
     z-index: 1;
     display: flex;
     justify-content:flex-start;
-      width: 5%;
+    width: 5%;
     color: #fff;
     text-align: center;
     opacity: 0.5;
@@ -85,19 +77,17 @@ position: absolute;
     padding-left: 5px;
 } 
 
-
-
- #carrusel_logos .carousel-control-next-icon {
+#carrusel_logos .carousel-control-next-icon {
     width: 30px;
     height: 90px;
     border-top: 1px solid #000;
-   border:0px;
+    border:0px;
     display:flex;
     justify-content:center;
-     align-items: center;
-     background-color: #fff;
-     background-image: none;
-     position: absolute;
+    align-items: center;
+    background-color: #fff;
+    background-image: none;
+    position: absolute;
 }
  
 #carrusel_logos .carousel-control-next-icon:after{
@@ -121,8 +111,4 @@ position: absolute;
     transform:rotate(45deg);
     border-radius:1px;
 }
-
-
-
-
 /*logo carrusel*/
