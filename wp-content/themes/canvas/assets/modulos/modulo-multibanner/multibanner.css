@@ -1,24 +1,31 @@
 #multibanner .multibanner-titulo{
-    position: relative; 
-    overflow: hidden;
-    font-size: 1.5rem;
-    text-transform: uppercase;
+    color: #6101ff;
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem 0 0;
 }
-#multibanner .multibanner-titulo::after{
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: #656563;
-    display: inline-block;
-    position: absolute;
-    top: 60%;
-    margin-left: 20px;
+
+#multibanner .multibanner-subtitulo{
+    color: #1e1e1e;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
 }
-#multibanner .multibanner-contenedor .banner a{
+
+#multibanner div.small-line {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #6101ff;
+    margin: 0 auto;
+}
+
+#multibanner .multibanner-contenedor .banner a.logos-card{
     position: relative;
-    overflow: hidden;
     display: block;
+    padding: 0 0.5rem;
 }
+
 #multibanner .multibanner-contenedor .banner a img{
     min-width: 100%;
     min-height: 100%;
@@ -27,10 +34,15 @@
     object-fit: cover;
     object-position: center;
     transition: 0.3s;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 5px rgb(20 20 20 / 10%);
 }
+
 #multibanner .multibanner-contenedor .banner a:hover img{
     transform: scale(105%);
 }
+
 @media (max-width:787px){
     #multibanner .multibanner-contenedor .banner a{
         display: unset;
