@@ -188,7 +188,6 @@ include get_template_directory() . '/assets/modulos/modulo-infobox/core-infobox.
 // INTEGRADOS A
 include get_template_directory() . '/assets/modulos/modulo-multibanner/core-multibanner.php';
 
-include get_template_directory() . '/assets/modulos/modulo-carrusel-ofertas/core-carrusel-ofertas.php';
 include get_template_directory() . '/assets/modulos/modulo-microbox/core-microbox.php';
 include get_template_directory() . '/assets/modulos/modulo-parallax-block/core-parallax-block.php';
 include get_template_directory() . '/assets/modulos/modulo-carrusel-logos/core-carrusel-logo.php';
