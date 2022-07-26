@@ -3,14 +3,14 @@
 function multibanner_register() {
 
     $labels = array(
-        'name' => _x('MultiBanners Central', 'post type general name'),
-        'singular_name' => _x('Multibanner Central', 'post type singular name'),
-        'add_new' => _x('Agregar nuevo banner', 'slideshow_two item'),
-        'add_new_item' => __('Agregar nuevo banner'),
-        'edit_item' => __('Editar banner'),
-        'new_item' => __('Nuevo banner'),
-        'view_item' => __('Ver el banner'),
-        'search_items' => __('Buscar banner'),
+        'name' => _x('Logos Integraciones', 'post type general name'),
+        'singular_name' => _x('Logos Integraciones', 'post type singular name'),
+        'add_new' => _x('Agregar nuevo socio', 'slideshow_two item'),
+        'add_new_item' => __('Agregar nuevo socio'),
+        'edit_item' => __('Editar socio'),
+        'new_item' => __('Nuevo socio'),
+        'view_item' => __('Ver el socio'),
+        'search_items' => __('Buscar socio'),
         'not_found' =>  __('No se encontraron'),
         'not_found_in_trash' => __('No se encontraron en la basura'),
         'parent_item_colon' => ''

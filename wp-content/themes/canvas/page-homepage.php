@@ -17,14 +17,24 @@ get_header('');
  ?>
 <main id="primary" class="">
       
-        <!-- CAROUSEL HOME -->
+        <!-- CAROUSEL HOME / SECCION 1 -->
         <?php
             include get_template_directory() . '/assets/modulos/modulo-slider/slider.php';
         ?>
 
-        <!-- CAROUSEL HOME -->
+        <!-- EL MEJOR DESPACHO HOME / SECCION 2 -->
         <?php
             include get_template_directory() . '/assets/modulos/modulo-boxinfo/loop-modulo-boxinfo.php';
+        ?>
+
+        <!-- SERVICIOS / SECCION 3 -->
+        <?php
+            include get_template_directory() . '/assets/modulos/modulo-infobox/loop-modulo-infobox.php';
+        ?>
+
+        <!-- ESTAMOS INTEGRADOS A / SECCION 4 -->
+        <?php
+            include get_template_directory() . '/assets/modulos/modulo-multibanner/multibanner.php';
         ?>
    
         <?php

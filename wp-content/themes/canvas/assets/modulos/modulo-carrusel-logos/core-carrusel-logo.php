@@ -7,12 +7,12 @@ add_action( 'init', 'carrusel_logos', 0 );
 function carrusel_logos() {
 
 	$labels = array(
-		'name'                  => _x( 'carrusel_logos', 'Post Type General Name', 'carrusel_logos' ),
-		'singular_name'         => _x( 'carrusel_logo', 'Post Type Singular Name', 'carrusel_logos' ),
-		'menu_name'             => __( 'carrusel_logos', 'carrusel_logos' ),
-		'name_admin_bar'        => __( 'carrusel_logos', 'carrusel_logos' ),
-		'archives'              => __( 'carrusel_logos', 'carrusel_logos' ),
-		'attributes'            => __( 'carrusel_logos', 'carrusel_logos' ),
+		'name'                  => _x( 'Carrusel de logos', 'Post Type General Name' ),
+		'singular_name'         => _x( 'Carrusel de logos', 'Post Type Singular Name' ),
+		'menu_name'             => __( 'Carrusel de logos', 'carrusel_logos' ),
+		'name_admin_bar'        => __( 'Carrusel de logos', 'carrusel_logos' ),
+		'archives'              => __( 'Carrusel de logos', 'carrusel_logos' ),
+		'attributes'            => __( 'Carrusel de logos', 'carrusel_logos' ),
 		'parent_item_colon'     => __( 'Basado en:', 'carrusel_logos' ),
 		'all_items'             => __( 'Todas las carrusel_logos', 'carrusel_logos' ),
 		'add_new_item'          => __( 'Agregar nueva carrusel_logo', 'carrusel_logos' ),
@@ -36,8 +36,8 @@ function carrusel_logos() {
 		'filter_items_list'     => __( 'Primer elemento del articulo', 'carrusel_logos' ),
 	);
 	$args = array(
-		'label'                 => __( 'carrusel_logos', 'carrusel_logos' ),
-		'description'           => __( 'carrusel_logos', 'carrusel_logos' ),
+		'label'                 => __( 'Carrusel de logos', 'carrusel_logos' ),
+		'description'           => __( 'Carrusel de logos', 'carrusel_logos' ),
 		'labels'                => $labels,
 		'show_in_rest' => false,
 		'supports'              => array( 'title', 'custom-fields', 'page-attributes'),
@@ -75,7 +75,7 @@ function carrusel_logos() {
 		'categoria-carrusel_logos',
 		'carrusel_logos',
 		array(
-			'label' => __( 'Categoria carrusel_logos' ),
+			'label' => __( 'Categoria carrusel de logos' ),
 			'rewrite' => array( 'slug' => 'categoria-carrusel_logos' ),
 			'hierarchical' => true,
 			 // Allow automatic creation of taxonomy columns on associated post-types table?
@@ -94,7 +94,7 @@ register_taxonomy(
 			'etiqueta-carrusel_logos','carrusel_logos',array(
 			'hierarchical' => false,
 			'labels' => $labels,
-			'label' => __( 'Etiqueta carrusel_logos' ),
+			'label' => __( 'Etiqueta Carrusel de logos' ),
 			 // Allow automatic creation of taxonomy columns on associated post-types table?
 			 'show_admin_column'   => true,
 			 // Show in quick edit panel?

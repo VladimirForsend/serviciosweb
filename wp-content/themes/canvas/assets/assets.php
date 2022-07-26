@@ -179,15 +179,21 @@ add_filter('excerpt_length', 'tn_custom_excerpt_length', 999);
 
 //Regiones.
 //
+// SLIDERHOME
 include get_template_directory() . '/assets/modulos/modulo-slider/core-slider.php';
+// MEJOR DESPACHO
+include get_template_directory() . '/assets/modulos/modulo-boxinfo/core-modulo-boxinfo.php';
+// SERVICIOS
+include get_template_directory() . '/assets/modulos/modulo-infobox/core-infobox.php';
+// INTEGRADOS A
+include get_template_directory() . '/assets/modulos/modulo-multibanner/core-multibanner.php';
+
 include get_template_directory() . '/assets/modulos/modulo-carrusel-ofertas/core-carrusel-ofertas.php';
 include get_template_directory() . '/assets/modulos/modulo-microbox/core-microbox.php';
 include get_template_directory() . '/assets/modulos/modulo-parallax-block/core-parallax-block.php';
 include get_template_directory() . '/assets/modulos/modulo-carrusel-logos/core-carrusel-logo.php';
-include get_template_directory() . '/assets/modulos/modulo-infobox/core-infobox.php';
 include get_template_directory() . '/assets/modulos/modulo-multibanner2/core-multibanner2.php';
-include get_template_directory() . '/assets/modulos/modulo-multibanner/core-multibanner.php';
-include get_template_directory() . '/assets/modulos/modulo-boxinfo/core-modulo-boxinfo.php';
+
 
 //widget wsapp
 include get_template_directory() . '/assets/widgets/widget-whatsapp.php';

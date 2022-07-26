@@ -37,17 +37,7 @@
                     margin-bottom: 1rem;
                     "><?php echo get_the_title(); ?></h4>
                     <p style="max-width:400px;"><?php echo get_the_excerpt(); ?></p>
-                    <button style="    
-                    background: #6200ff;
-                    border: #6200ff;
-                    z-index: 99;
-                    color: #ffffff;
-                    /* text-decoration: none!important; */
-                    padding: 1rem;
-                    text-transform: uppercase;
-                    font-weight: bolder;
-                    margin-top: 1rem;
-                    "><a style="text-decoration: none;" href="<?php echo esc_url(home_url('/quienes-somos')); ?>">conoce más</a></button>
+                    <button class="button-boxinfo"><a style="text-decoration: none;" href="<?php echo esc_url(home_url('/quienes-somos')); ?>">conoce más</a></button>
                 </figcaption>
             </div>
         </div>
