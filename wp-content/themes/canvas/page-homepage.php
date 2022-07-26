@@ -37,6 +37,14 @@ get_header('');
             include get_template_directory() . '/assets/modulos/modulo-multibanner/multibanner.php';
         ?>
    
+        <!-- <div>
+            <!?php
+                $imagen23 = get_field('logo_plataforma');
+            ?>
+            <img src="<!?php echo esc_url($imagen23['url']); ?>" alt="<!?php echo esc_attr($imagen23['alt']); ?>">
+        </div> -->
+
+
         <?php
         if (have_posts()) :
             if (is_home() && !is_front_page()) :
@@ -44,6 +52,7 @@ get_header('');
 
         <?php
             endif;
+
 
             /* Start the Loop */
             while (have_posts()) :
