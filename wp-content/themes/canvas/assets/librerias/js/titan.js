@@ -2,9 +2,8 @@ jQuery(function($) {
 
 
     $(document).ready(function() {
-        //region comuna
-        $('#billing_city_field, #billing_state_field').wrapAll('<div class="modulo-regiones-titan"></div>');
-
+        // REMOVE LOADER
+        $('#loader').delay(5000).fadeOut('slow'); // will fade out the white DIV that covers the website. 
 
     });
 

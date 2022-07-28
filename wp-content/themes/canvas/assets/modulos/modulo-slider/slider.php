@@ -1,3 +1,6 @@
+<style>
+    <?php include get_template_directory() . '/assets/modulos/modulo-slider/slider.css'; ?>
+</style>
 <!--Slider-->
 
 <div id="carouselExampleControls" class="carousel slide col-12" data-ride="carousel" data-interval="5000">
@@ -14,6 +17,7 @@
         line-height: 1.2;
         padding: 0.5rem 0.5rem 1rem 0;
         ">Despachamos<br> buenas<br> experiencias</h1>
+
         <h3 style="
         position: absolute;
         top: 53%;
@@ -25,19 +29,7 @@
         padding: 0.5rem 1rem 1rem 0;
         font-size: 2vw;
         ">99% de efectividad en las entregas<br/> Somos el primer Last mile con propósito</h3>
-        <button style="    
-        position: absolute;
-        top: 72%;
-        left: 10%;
-        background: #94fc01;
-        border: #94fc01;
-        z-index: 99;
-        color: #6200ff;
-        /* text-decoration: none!important; */
-        padding: 1rem;
-        text-transform: uppercase;
-        font-weight: bolder;
-        "><a style="text-decoration: none;" href="">comenzar a despachar</a></button>
+        <a style="text-decoration: none;" href=""><button class="action-button">Comenzar a despachar</button></a>
         <?php $active = true;
         $temp = $wp_query;
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;

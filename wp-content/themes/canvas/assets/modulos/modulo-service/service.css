@@ -1,7 +1,7 @@
-.preguntas-frecuentes .elemento{
+.servicio .elemento{
     margin-bottom: 15px;
 }
-.preguntas-frecuentes .elemento .boton{
+.servicio .elemento .boton{
     position: relative;
     outline: none;
     width: 100%;
@@ -15,43 +15,94 @@
     text-align: left;
     transition: 0.3s;
 }
-.preguntas-frecuentes .elemento .boton::after{
-    content: "-";
-    position: absolute;
-    right: 25px;
-    font-size: 35px;
-}
-.preguntas-frecuentes .elemento .boton.collapsed::after{
-    content: "+";
-    font-size: 25px;
-}
-.preguntas-frecuentes .elemento .boton:hover{
+
+.servicio .elemento .boton:hover{
     background-color: var(--color-marca-sexto) !important;
 }
-.preguntas-frecuentes .elemento .boton .numero{
+
+.servicio .elemento .boton .numero{
     width: 35px;
     font-weight: bold;
 }
-.preguntas-frecuentes .elemento .boton .pregunta{
+
+.servicio .elemento .boton .pregunta{
     font-weight: bold;
     font-size: 16px;
     padding-left: 1vw;
 }
-.preguntas-frecuentes .elemento .respuesta{
+
+.servicio .elemento .respuesta{
     padding: 5px 5vw;
     font-size: 16px;
 }
-.preguntas-frecuentes .separador{
+
+.servicio .separador{
     border-bottom: 2px solid var(--color-marca-sexto);
     margin-bottom: 50px;
     padding-bottom: 30px;
 }
-#moduloservicea.preguntas-frecuentes .elemento .boton{
+
+#moduloservice {
+    height: 40vw;
+    max-height: 600px;
+}
+
+#moduloservice.servicio .elemento .boton{
     background-color: var(--color-marca-primero) !important;
     color: white !important;
     border-color: var(--color-marca-primero) !important;
 }
-#moduloservicea.preguntas-frecuentes .elemento .boton:hover{
+
+#moduloservice.servicio .elemento .boton:hover{
     background-color: var(--color-marca-segundo) !important;
     border-color: var(--color-marca-segundo) !important;
 }
+
+.service-subtitle {
+    font-weight: bolder;
+    color: #6200ff;
+    font-size: 2rem;
+}
+
+.servicio {
+    padding: 1rem 2rem 1rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+}
+
+div.small-line {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #6101ff;
+    margin: 0 auto;
+}
+
+#servicioButton.accordion-button:not(.collapsed) {
+    background-color: #6101ff;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+#servicioButton.accordion-button:not(.collapsed) p {
+    color: #ffffff;
+}
+
+#servicioButton.accordion-button:not(.collapsed)::after {
+    transform: rotate(-90deg);
+    filter: brightness(10);
+    margin-left: 1rem;
+    padding: 1rem;
+    background-size: 20px;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+#servicioButton.accordion-button::after {
+    filter: brightness(10);
+}
+

@@ -3,7 +3,7 @@
 function boxinfo_register() {
 
     $labels = array(
-        'name' => _x('bloque web', 'post type general name'),
+        'name' => _x('Somos seniors', 'post type general name'),
         'singular_name' => _x('boxinfo', 'post type singular name'),
         'add_new' => _x('Agregar banner de categoría', 'slideshow_two item'),
         'add_new_item' => __('Agregar bloque web'),

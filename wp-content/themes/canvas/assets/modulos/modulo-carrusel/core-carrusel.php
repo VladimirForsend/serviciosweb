@@ -1,10 +1,10 @@
-<?php  /*  Multibanners */
+<?php  /*  carrusels */
 
-function multibanner_register() {
+function carrusel_register() {
 
     $labels = array(
-        'name' => _x('MultiBanners', 'post type general name'),
-        'singular_name' => _x('Multibanner', 'post type singular name'),
+        'name' => _x('Carrusel Testimonios', 'post type general name'),
+        'singular_name' => _x('Carrusel Testimonios', 'post type singular name'),
         'add_new' => _x('Agregar nuevo banner', 'slideshow_two item'),
         'add_new_item' => __('Agregar nuevo banner'),
         'edit_item' => __('Editar banner'),
@@ -28,24 +28,24 @@ function multibanner_register() {
         'menu_icon'  => 'dashicons-images-alt',
         'hierarchical' => false,
         'menu_position' => null,
-        'taxonomies'	=> array( 'categoria-multibanner', 'etiqueta-multibanner', ), 
+        'taxonomies'	=> array( 'categoria-carrusel', 'etiqueta-carrusel', ), 
         'supports' => array('title', 'thumbnail'),
-        'rewrite' => array('slug' => 'multibanner', 'with_front' => false)
+        'rewrite' => array('slug' => 'carrusel', 'with_front' => false)
       ); 
 
-    register_post_type( 'multibanner' , $args );
+    register_post_type( 'carrusel' , $args );
 }
 
-add_action('init', 'multibanner_register');
+add_action('init', 'carrusel_register');
 
 /*categorias personalizadas para inf*/
-function categoria_multibanner() {
+function categoria_carrusel() {
 	register_taxonomy(
-		'categoria-multibanner',
-		'multibanner',
+		'categoria-carrusel',
+		'carrusel',
 		array(
-			'label' => __( 'Categoria multibanner' ),
-			'rewrite' => array( 'slug' => 'categoria-multibanner' ),
+			'label' => __( 'Categoria carrusel' ),
+			'rewrite' => array( 'slug' => 'categoria-carrusel' ),
 			'hierarchical' => true,
 			 // Allow automatic creation of taxonomy columns on associated post-types table?
 			 'show_admin_column'   => true,
@@ -55,31 +55,31 @@ function categoria_multibanner() {
 	);
 }
 
-add_action( 'init', 'categoria_multibanner' );
+add_action( 'init', 'categoria_carrusel' );
 
-function etiqueta_multibanner() {
+function etiqueta_carrusel() {
     register_taxonomy(
-        'etiqueta-multibanner','multibanner',array(
+        'etiqueta-carrusel','carrusel',array(
         'hierarchical' => false,
-        'label' => __( 'Etiqueta multibanner' ),
+        'label' => __( 'Etiqueta carrusel' ),
         // Allow automatic creation of taxonomy columns on associated post-types table?
         'show_admin_column'   => true,
         // Show in quick edit panel?
         'show_in_quick_edit'  => true,
         'update_count_callback' => '_update_post_term_count',
         'infquery_var' => true,
-        'rewrite' => array( 'slug' => 'etiqueta-multibanner' ),
+        'rewrite' => array( 'slug' => 'etiqueta-carrusel' ),
         )
     );
 }
 
-add_action( 'init', 'etiqueta_multibanner' );
+add_action( 'init', 'etiqueta_carrusel' );
 
 /*function display_inf( $infquery ) { 
-	if( is_category() || is_tag() && empty( $infquery->infquery_vars['multibannerfilter'] ) ) {
+	if( is_category() || is_tag() && empty( $infquery->infquery_vars['carruselfilter'] ) ) {
 	    $infquery->set( 'post_type', array(
-        'post', 'nav_menu_item', 'multibanner', 
-        'post', 'nav_menu_item', 'multibanner', 
+        'post', 'nav_menu_item', 'carrusel', 
+        'post', 'nav_menu_item', 'carrusel', 
 	    ));
 	    return $infquery;
 	}
@@ -91,7 +91,7 @@ if( function_exists('acf_add_local_field_group') ):
 
     acf_add_local_field_group(array(
         'key' => 'group_62aba6d3b86b0',
-        'title' => 'Modulo -> Multibanner',
+        'title' => 'Modulo -> carrusel',
         'fields' => array(
             array(
                 'key' => 'field_62aba6db217ba',
@@ -190,7 +190,7 @@ if( function_exists('acf_add_local_field_group') ):
                 array(
                     'param' => 'post_type',
                     'operator' => '==',
-                    'value' => 'multibanner',
+                    'value' => 'carrusel',
                 ),
             ),
         ),

@@ -15,6 +15,7 @@
 
 get_header('');
  ?>
+<!-- ADD PRELOADER -->
 <main id="primary" class="">
       
         <!-- CAROUSEL HOME / SECCION 1 -->
@@ -32,19 +33,28 @@ get_header('');
             include get_template_directory() . '/assets/modulos/modulo-service/service.php';
         ?>
 
+        <!-- PLATAFORMA MONITOREO -->
+        <h4 class="text-center mt-5 mb-5">Con nuestra plataforma podrás tener un seguimiento activo de tus pedidos</h4>
+
         <!-- ESTAMOS INTEGRADOS A / SECCION 4 -->
         <?php
             include get_template_directory() . '/assets/modulos/modulo-multibanner/multibanner.php';
         ?>
+
+        <!-- ¡PARA QUE NO LA PIENSES TANTO! / SECCION 5 -->
+        <?php
+            include get_template_directory() . '/assets/modulos/modulo-multibanner2/multibanner2.php';
+        ?>
    
-        <!-- <div>
-            <!?php
-                $imagen23 = get_field('logo_plataforma');
-            ?>
-            <img src="<!?php echo esc_url($imagen23['url']); ?>" alt="<!?php echo esc_attr($imagen23['alt']); ?>">
-        </div> -->
+        <!-- EN PALABRAS DE CLIENTES / SECCION 5 -->
+        <?php
+            include get_template_directory() . '/assets/modulos/modulo-carrusel/carrusel.php';
+        ?>
 
+        <!-- PLATAFORMA MONITOREO -->
+        <h4 class="text-center mt-5 mb-5" style="color:#6200ff;font-size:2rem;">Reportajes</h4>
 
+     
         <?php
         if (have_posts()) :
             if (is_home() && !is_front_page()) :

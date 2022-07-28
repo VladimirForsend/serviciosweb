@@ -46,8 +46,8 @@
                 ?>
             </div>
             <div class="d-flex justify-content-center align-items-center col-2 col-md-2">
-                <button class="login-senior"><a href="">Ingresar</a></button>
-                <button class="register-senior"><a href="">Registrar</a></button>
+                <button class="login-senior"><a href="https://usuarios.servisenior.cl/?app=home">Ingresar</a></button>
+                <button class="register-senior"><a href="https://usuarios.servisenior.cl/registro-cliente">Registrar</a></button>
             </div>
         </div>
     </div>

@@ -177,21 +177,26 @@ add_filter('excerpt_length', 'tn_custom_excerpt_length', 999);
 /*include(get_stylesheet_directory() . '/assets/modulos/boleta-factura-modulo.php');*/
 
 
-//Regiones.
-//
-// SLIDERHOME
+// SECCIONES DEL HOME
+// 1.- SLIDERHOME
 include get_template_directory() . '/assets/modulos/modulo-slider/core-slider.php';
-// MEJOR DESPACHO
+// 2.- MEJOR DESPACHO
 include get_template_directory() . '/assets/modulos/modulo-boxinfo/core-modulo-boxinfo.php';
-// SERVICIOS
-include get_template_directory() . '/assets/modulos/modulo-infobox/core-infobox.php';
-// INTEGRADOS A
+// 3.- SERVICIOS
+include get_template_directory() . '/assets/modulos/modulo-service/core-service.php';
+// 4.- SEGUIMIENTO DE PEDIDOS
+
+// 5.- INTEGRADOS A
 include get_template_directory() . '/assets/modulos/modulo-multibanner/core-multibanner.php';
+// 6.- NO LA PIENSES TANTO
+include get_template_directory() . '/assets/modulos/modulo-multibanner2/core-multibanner2.php';
+// 7.- CARRUSEL CARDS
+include get_template_directory() . '/assets/modulos/modulo-carrusel/core-carrusel.php';
 
 include get_template_directory() . '/assets/modulos/modulo-microbox/core-microbox.php';
 include get_template_directory() . '/assets/modulos/modulo-parallax-block/core-parallax-block.php';
 include get_template_directory() . '/assets/modulos/modulo-carrusel-logos/core-carrusel-logo.php';
-include get_template_directory() . '/assets/modulos/modulo-multibanner2/core-multibanner2.php';
+
 
 
 //widget wsapp

@@ -1203,63 +1203,7 @@
         transform: scale(110%);
     }
 
-
     /* FEDE'S CSS */
-
-    .tarjeta-contenedor-boxinfo figcaption {
-        display: none;
-    }
-
-    .tarjeta-contenedor-boxinfo {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: translate(-505, -50%);
-        background: #6200ff;
-        border: 2px solid #6200ff;
-        border-radius: 50%;
-        box-sizing: border-box;
-    }
-
-    .tarjeta-contenedor-boxinfo:after {
-        animation-delay: 1s;
-    }
-
-    @keyframes animate {
-        0% {
-            transform: scale(2.0);
-        }
-
-        100% {
-            transform: scale(0.7);
-        }
-    }
-    
-    .tarjeta-contenedor-boxinfo:before {
-        content: '';
-        position: absolute;
-        left: -10px;
-        top: -10px;
-        right: -10px;
-        bottom: -10px;
-        border: 1px solid #6200ff;
-        border-radius: 50%;
-        animation: animate 1.5s linear infinite;
-        margin: 4rem;
-    }
-
-    .tarjeta-contenedor-boxinfo:after {
-        content: '';
-        position: absolute;
-        left: -20px;
-        top: -20px;
-        right: -20px;
-        bottom: -20px;
-        border: 2px solid #6200ff;
-        border-radius: 50%;
-        animation: animate 2s linear infinite;
-        margin: 4rem;
-    }
 
     #carouselExampleControls .carousel-control-next, #carouselExampleControls .carousel-control-prev {
         width: 10%;

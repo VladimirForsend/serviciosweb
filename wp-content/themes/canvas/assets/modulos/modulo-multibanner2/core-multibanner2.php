@@ -3,8 +3,8 @@
 function multibannerb_register() {
 
     $labels = array(
-        'name' => _x('MultiBanners Superior', 'post type general name'),
-        'singular_name' => _x('Multibanner Superior', 'post type singular name'),
+        'name' => _x('¡No la pienses tanto!', 'post type general name'),
+        'singular_name' => _x('No la pienses tanto', 'post type singular name'),
         'add_new' => _x('Agregar nuevo banner', 'multibannerb item'),
         'add_new_item' => __('Agregar nuevo banner'),
         'edit_item' => __('Editar banner'),

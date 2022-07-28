@@ -331,7 +331,7 @@ function titan_customize_fuentes()
         'Lato'                 => __('Lato'),
         'Open Sans'            => __('Open+Sans'),
         'Montserrat'           => __('Montserrat'),
-
+        
     ));
 }
 
@@ -371,13 +371,14 @@ function titan_customize_fuentes_url()
     // fuente ...
     $fonts         = array();
     $subsets       = 'latin,latin-ext';
-    $fonts[]     = $titan_fuente . ':400';
+    $fonts[]     = $titan_fuente . ':400:500:600:700:800:900';
 
     return add_query_arg(array(
         'family' => urlencode(implode('|', $fonts)),
         'subset' => urlencode($subsets),
     ), '//fonts.googleapis.com/css');
 }
+
 
 /**
  * Enqueue fonts
