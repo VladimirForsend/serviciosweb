@@ -1,20 +1,17 @@
 <?php
  /*speakers*/
 
-// Register Custom Post Type
-add_action( 'init', 'microbox', 0 );
-
 function microbox() {
 
 	$labels = array(
-		'name'                  => _x( 'microbox', 'Post Type General Name', 'microbox' ),
-		'singular_name'         => _x( 'Charlista', 'Post Type Singular Name', 'microbox' ),
-		'menu_name'             => __( 'microbox', 'microbox' ),
-		'name_admin_bar'        => __( 'microbox', 'microbox' ),
-		'archives'              => __( 'microbox', 'microbox' ),
-		'attributes'            => __( 'microbox', 'microbox' ),
+		'name'                  => _x( 'Reportajes', 'Post Type General Name', 'microbox' ),
+		'singular_name'         => _x( 'Reportajes', 'Post Type Singular Name', 'microbox' ),
+		'menu_name'             => __( 'Reportajes', 'microbox' ),
+		'name_admin_bar'        => __( 'Reportajes', 'microbox' ),
+		'archives'              => __( 'Reportajes', 'microbox' ),
+		'attributes'            => __( 'Reportajes', 'microbox' ),
 		'parent_item_colon'     => __( 'Basado en:', 'microbox' ),
-		'all_items'             => __( 'Todos los microbox', 'microbox' ),
+		'all_items'             => __( 'Todos los reportajes', 'microbox' ),
 		'add_new_item'          => __( 'Agregar nuevo microbox', 'microbox' ),
 		'add_new'               => __( 'Agregar nueva', 'microbox' ),
 		'new_item'              => __( 'nuevo microbox', 'microbox' ),
@@ -58,7 +55,6 @@ function microbox() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post', 
 		'rewrite' => array('slug' => 'microbox', 'with_front' => FALSE)
-		
 	);
 
 
@@ -68,57 +64,5 @@ function microbox() {
 
 }
 
- /*categorias personalizadas para microbox*/
- function categoria_microbox() {
-
-	register_taxonomy(
-		'categoria-microbox',
-		'microbox',
-		array(
-			'label' => __( 'Categoria microbox' ),
-			'rewrite' => array( 'slug' => 'categoria-microbox' ),
-			'hierarchical' => true,
-			 // Allow automatic creation of taxonomy columns on associated post-types table?
-			 'show_admin_column'   => true,
-			 // Show in quick edit panel?
-			 'show_in_quick_edit'  => true,
-		)
-	);
-}
-add_action( 'init', 'categoria_microbox' );
-
-
-function etiqueta_microbox() {
-
-register_taxonomy(
-			'etiqueta-microbox','microbox',array(
-			'hierarchical' => false,
-			'labels' => $labels,
-			'label' => __( 'Etiqueta microbox' ),
-			 // Allow automatic creation of taxonomy columns on associated post-types table?
-			 'show_admin_column'   => true,
-			 // Show in quick edit panel?
-			 'show_in_quick_edit'  => true,
-			'update_count_callback' => '_update_post_term_count',
-			'microboxquery_var' => true,
-			'rewrite' => array( 'slug' => 'etiqueta-microbox' ),
-		)
-	);
-
-
-
-
-}
-add_action( 'init', 'etiqueta_microbox' );
-
-function display_microbox( $microboxquery ) {
-	if( is_category() || is_tag() && empty( $microboxquery->microboxquery_vars['microboxfilter'] ) ) {
-	$microboxquery->set( 'post_type', array(
-	'post', 'nav_menu_item', 'microbox', 
-	'post', 'nav_menu_item', 'microbox', 
-	));
-	return $microboxquery;
-	}
-   }
-   
-   add_filter( 'pre_get_posts', 'display_microbox' );
+// Register Custom Post Type
+add_action( 'init', 'microbox', 0 );

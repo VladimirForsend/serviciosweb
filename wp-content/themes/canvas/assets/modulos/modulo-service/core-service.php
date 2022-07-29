@@ -3,7 +3,7 @@
 function service_register() {
 
     $labels = array(
-        'name' => _x('Servicios', 'post type general name'),
+        'name' => _x('Home 4', 'post type general name'),
         'singular_name' => _x('Servicio', 'post type singular name'),
         'add_new' => _x('Agregar nueva', 'dropdown item'),
         'add_new_item' => __('Agregar nueva pregunta'),

@@ -1,20 +1,16 @@
 <?php
  /*speakers*/
 
-// Register Custom Post Type
-add_action( 'init', 'carrusel_logos', 0 );
-
 function carrusel_logos() {
-
 	$labels = array(
-		'name'                  => _x( 'Carrusel de logos', 'Post Type General Name' ),
-		'singular_name'         => _x( 'Carrusel de logos', 'Post Type Singular Name' ),
-		'menu_name'             => __( 'Carrusel de logos', 'carrusel_logos' ),
-		'name_admin_bar'        => __( 'Carrusel de logos', 'carrusel_logos' ),
+		'name'                  => _x( 'Home 2', 'Post Type General Name' ),
+		'singular_name'         => _x( 'Home 2', 'Post Type Singular Name' ),
+		'menu_name'             => __( 'Home 2', 'carrusel_logos' ),
+		'name_admin_bar'        => __( 'Home 2', 'carrusel_logos' ),
 		'archives'              => __( 'Carrusel de logos', 'carrusel_logos' ),
 		'attributes'            => __( 'Carrusel de logos', 'carrusel_logos' ),
 		'parent_item_colon'     => __( 'Basado en:', 'carrusel_logos' ),
-		'all_items'             => __( 'Todas las carrusel_logos', 'carrusel_logos' ),
+		'all_items'             => __( 'Todos los Carruseles de logos', 'carrusel_logos' ),
 		'add_new_item'          => __( 'Agregar nueva carrusel_logo', 'carrusel_logos' ),
 		'add_new'               => __( 'Agregar nueva', 'carrusel_logos' ),
 		'new_item'              => __( 'nueva carrusel_logo', 'carrusel_logos' ),
@@ -46,7 +42,6 @@ function carrusel_logos() {
 		'public'                => true,
 		'show_ui'               => true, 
 		'show_in_menu'          => true,
-		'menu_position'         => 10,
 		'menu_icon'             => 'dashicons-book-alt',
 		'menu_position' => null,
 		'query_var' => true,
@@ -57,68 +52,10 @@ function carrusel_logos() {
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post', 
-		'rewrite' => array('slug' => 'carrusel_logos', 'with_front' => FALSE)
+		'rewrite' => array('slug' => 'Carrusel de logos', 'with_front' => FALSE)
 		
 	);
-
-
-
-
 	register_post_type( 'carrusel_logos', $args );
-
 } 
-
- /*categorias personalizadas para carrusel_logos*/
- function categoria_carrusel_logos() {
-
-	register_taxonomy(
-		'categoria-carrusel_logos',
-		'carrusel_logos',
-		array(
-			'label' => __( 'Categoria carrusel de logos' ),
-			'rewrite' => array( 'slug' => 'categoria-carrusel_logos' ),
-			'hierarchical' => true,
-			 // Allow automatic creation of taxonomy columns on associated post-types table?
-			 'show_admin_column'   => true,
-			 // Show in quick edit panel?
-			 'show_in_quick_edit'  => true,
-		)
-	);
-}
-add_action( 'init', 'categoria_carrusel_logos' );
-
-
-function etiqueta_carrusel_logos() {
-
-register_taxonomy(
-			'etiqueta-carrusel_logos','carrusel_logos',array(
-			'hierarchical' => false,
-			'labels' => $labels,
-			'label' => __( 'Etiqueta Carrusel de logos' ),
-			 // Allow automatic creation of taxonomy columns on associated post-types table?
-			 'show_admin_column'   => true,
-			 // Show in quick edit panel?
-			 'show_in_quick_edit'  => true,
-			'update_count_callback' => '_update_post_term_count',
-			'carrusel_logoquery_var' => true,
-			'rewrite' => array( 'slug' => 'etiqueta-carrusel_logos' ),
-		)
-	);
-
- 
-
-
-}
-add_action( 'init', 'etiqueta_carrusel_logos' );
-
-function display_carrusel_logos( $carrusel_logoquery ) {
-	if( is_category() || is_tag() && empty( $carrusel_logoquery->carrusel_logoquery_vars['carrusel_logosfilter'] ) ) {
-	$carrusel_logoquery->set( 'post_type', array(
-	'post', 'nav_menu_item', 'carrusel_logo', 
-	'post', 'nav_menu_item', 'carrusel_logos', 
-	));
-	return $carrusel_logoquery;
-	}
-   }
-   
-   add_filter( 'pre_get_posts', 'display_carrusel_logos' );
+// Register Custom Post Type
+add_action( 'init', 'carrusel_logos', 0 );

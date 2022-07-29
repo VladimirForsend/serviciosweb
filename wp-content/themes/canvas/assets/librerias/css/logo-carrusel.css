@@ -1,17 +1,17 @@
 /*logo carrusel*/
-#carrusel_logos.carousel {
+#carrusel_logos .carousel {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 160px;
     overflow: hidden;
     border-radius: 5px;
+    background: #4f00ce;
 }
 
 #carrusel_logos .carrusel-interior {
     outline: none;
-    height: 60px;
-    width: 25.3%;
+    height: 100px;
+    width: 12.3%;
     background-repeat: no-repeat;
     padding: 0px;
     background-position: center center;

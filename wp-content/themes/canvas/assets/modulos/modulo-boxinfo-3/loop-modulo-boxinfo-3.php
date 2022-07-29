@@ -1,5 +1,5 @@
 <style>
-    <?php include get_template_directory() . '/assets/modulos/modulo-boxinfo/modulo-boxinfo.css'; ?>
+    <?php include get_template_directory() . '/assets/modulos/modulo-boxinfo-3/modulo-boxinfo-3.css'; ?>
 </style>
 
 <div class="container-fluid contenedor-boxinfo bg-white">

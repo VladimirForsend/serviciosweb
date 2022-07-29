@@ -1,8 +1,9 @@
-#multibanner .multibanner-contenedor .banner a{
+#carrusel .carrusel-contenedor .banner a{
     position: relative;
     overflow: hidden;
 }
-#multibanner .multibanner-contenedor .banner a img{
+
+#carrusel .carrusel-contenedor .banner a img{
     min-width: 100%;
     min-height: 100%;
     height: auto;
@@ -11,6 +12,73 @@
     object-position: center;
     transition: 0.3s;
 }
-#multibanner .multibanner-contenedor .banner a:hover img{
+
+#carrusel .carrusel-contenedor .banner a:hover img{
     transform: scale(105%);
+}
+
+#carrusel .carrusel-card {
+    background: #fff;
+    max-width: 300px;
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+    text-align: center;
+    position: relative;
+    transition: .5s;
+}
+
+.carrusel-card:hover {
+    transform: scale(1.1);
+    border: 2px solid #6200ff;
+    box-shadow: 0px 3px 5px rgba(10,10,10,30%);
+}
+
+#carrusel .testimonio-imagen {
+    position: absolute;
+    top: -70px;
+    left: 50px;    
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 10rem;
+    box-shadow: 0px 3px 5px rgb(10 10 10 / 30%);
+}
+
+#carrusel .testimonio-name {
+    font-size: 1.2rem;
+    color: #6200ff;
+    font-weight: 900;
+    text-decoration: none;
+    margin-top: 8rem;
+    margin-bottom: 0;
+}
+
+#carrusel .testimonio-company {
+    font-size: 1rem;
+    font-weight: 900;
+    text-decoration: none;
+    margin: 0;
+}
+
+#carrusel .testimonio-cargo {
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0 0 1rem;
+}
+
+#carrusel .comillas {
+    font-size: 4rem;
+    color: #6200ff;
+    font-family: cursive;
+}
+
+.testimonio-text {
+    line-height: 1.5;
+}
+
+.text-end.comillas {
+    position: absolute;
+    bottom: 0;
+    line-height: 1.5;
+    transform: rotate(180deg);
 }

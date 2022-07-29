@@ -2,8 +2,8 @@
     <?php include get_template_directory() . '/assets/modulos/modulo-multibanner2/multibanner2.css'; ?>
 </style>
 
-<div id="multibannerb" class="container-fluid">
-    <h2 class="multibanner-titulo"><?php the_field('titulo_multibannera'); ?></h2>
+<div id="multibannerb" class="container my-5 pt-5">
+
 
     <div class="multibanner-contenedor row">
 
@@ -22,8 +22,39 @@
     if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
 
-    <div class="circle-green col-8 mb-3">
-        <?php $imagen = get_field('texto_burbuja'); ?>
+    <div class="col-4">
+        <div class="circle-green">
+            <img src="" alt="">
+        </div>
+    </div>
+    <div class="col-4">
+        <h2 class="titulo-purple"><?php the_field('titulo_pienses_tanto'); ?></h2>
+        <div class="circle circle-purple-2">
+            <h6 class="titulo-burbuja"><?php the_field('titulo_burbuja_1'); ?></h6>
+            <p class="text-burbuja"><?php the_field('texto_burbuja_1'); ?></p>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="circle circle-purple-1">
+            <h6 class="titulo-burbuja"><?php the_field('titulo_burbuja_2'); ?></h6>
+            <p class="text-burbuja"><?php the_field('texto_burbuja_2'); ?></p>
+        </div>
+        <div class="circle circle-white">
+            <h6 class="titulo-burbuja"><?php the_field('titulo_burbuja_3'); ?></h6>
+            <p class="text-burbuja"><?php the_field('texto_burbuja_3'); ?></p>
+        </div>
+    </div>
+    <div class="circle circle-white col-4 mb-3">
+        <h6 class="titulo-burbuja"><?php the_field('titulo_burbuja_4'); ?></h6>
+        <p class="text-burbuja"><?php the_field('texto_burbuja_4'); ?></p>
+    </div>
+    <div class="circle circle-purple col-4 mb-3">
+        <h6 class="titulo-burbuja"><?php the_field('titulo_burbuja_5'); ?></h6>
+        <p class="text-burbuja"><?php the_field('texto_burbuja_5'); ?></p>
+    </div>
+    <div class="circle circle-white col-4 mb-3">
+        <h6 class="titulo-burbuja"><?php the_field('titulo_burbuja_6'); ?></h6>
+        <p class="text-burbuja"><?php the_field('texto_burbuja_6'); ?></p>
     </div>
 
     <?php endwhile; ?>

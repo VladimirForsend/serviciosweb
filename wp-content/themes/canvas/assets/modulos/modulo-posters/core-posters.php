@@ -1,20 +1,17 @@
 <?php
  /*speakers*/
 
-// Register Custom Post Type
-add_action( 'init', 'posters', 0 );
-
 function posters() {
 
 	$labels = array(
-		'name'                  => _x( 'posters', 'Post Type General Name', 'posters' ),
+		'name'                  => _x( 'Home 5', 'Post Type General Name', 'posters' ),
 		'singular_name'         => _x( 'poster', 'Post Type Singular Name', 'posters' ),
-		'menu_name'             => __( 'posters', 'posters' ),
-		'name_admin_bar'        => __( 'posters', 'posters' ),
+		'menu_name'             => __( 'Home 5', 'posters' ),
+		'name_admin_bar'        => __( 'Seguimiento de Pedidos', 'posters' ),
 		'archives'              => __( 'posters', 'posters' ),
 		'attributes'            => __( 'posters', 'posters' ),
 		'parent_item_colon'     => __( 'Basado en:', 'posters' ),
-		'all_items'             => __( 'Todas las posters', 'posters' ),
+		'all_items'             => __( 'Todos los posters', 'posters' ),
 		'add_new_item'          => __( 'Agregar nueva poster', 'posters' ),
 		'add_new'               => __( 'Agregar nueva', 'posters' ),
 		'new_item'              => __( 'nueva poster', 'posters' ),
@@ -40,8 +37,7 @@ function posters() {
 		'description'           => __( 'posters', 'posters' ),
 		'labels'                => $labels,
 		'show_in_rest' => true,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'page-attributes', 'excerpt' ),
-		'taxonomies'            => array( 'categoria-posters', 'etiqueta-posters', ), 
+		'supports'              => array( 'title', 'custom-fields', 'page-attributes' ),
 		'rewrite' => true,
 		'hierarchical'          => true,
 		'public'                => true,
@@ -58,68 +54,10 @@ function posters() {
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post', 
-		'rewrite' => array('slug' => 'posters', 'with_front' => FALSE)
-		
+		'rewrite' => array('slug' => 'posters', 'with_front' => FALSE)	
 	);
-
-
-
-
 	register_post_type( 'posters', $args );
-
 }
 
- /*categorias personalizadas para posters*/
- function categoria_posters() {
-
-	register_taxonomy(
-		'categoria-posters',
-		'posters',
-		array(
-			'label' => __( 'Categoria posters' ),
-			'rewrite' => array( 'slug' => 'categoria-posters' ),
-			'hierarchical' => true,
-			 // Allow automatic creation of taxonomy columns on associated post-types table?
-			 'show_admin_column'   => true,
-			 // Show in quick edit panel?
-			 'show_in_quick_edit'  => true,
-		)
-	);
-}
-add_action( 'init', 'categoria_posters' );
-
-
-function etiqueta_posters() {
-
-register_taxonomy(
-			'etiqueta-posters','posters',array(
-			'hierarchical' => false,
-			'labels' => $labels,
-			'label' => __( 'Etiqueta posters' ),
-			 // Allow automatic creation of taxonomy columns on associated post-types table?
-			 'show_admin_column'   => true,
-			 // Show in quick edit panel?
-			 'show_in_quick_edit'  => true,
-			'update_count_callback' => '_update_post_term_count',
-			'posterquery_var' => true,
-			'rewrite' => array( 'slug' => 'etiqueta-posters' ),
-		)
-	);
-
-
-
-
-}
-add_action( 'init', 'etiqueta_posters' );
-
-function display_posters( $posterquery ) {
-	if( is_category() || is_tag() && empty( $posterquery->posterquery_vars['postersfilter'] ) ) {
-	$posterquery->set( 'post_type', array(
-	'post', 'nav_menu_item', 'poster', 
-	'post', 'nav_menu_item', 'posters', 
-	));
-	return $posterquery;
-	}
-   }
-   
-   add_filter( 'pre_get_posts', 'display_posters' );
+// Register Custom Post Type
+add_action( 'init', 'posters', 0 );

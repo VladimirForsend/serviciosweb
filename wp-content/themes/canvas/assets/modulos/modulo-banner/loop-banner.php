@@ -14,32 +14,13 @@
 			);
 			$wp_query = new WP_Query($args);
 			if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-
 					<div class="banner_area-home col-12 col-md-12 mb-3">
-
 						<!--foto banner home-->
-
 						<div class="foto-banner" style="background-image: url('<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>');"></div>
-
-
 						<!--foto banner home-->
-
-
-
-
-
 					</div><!-- .banner_area home -->
-
-
-
-
-
-
-
-
-
-				<?php endwhile;
-			else : ?>
+			<?php endwhile; ?>
+			<?php  else : ?>
 			<?php endif;
 			wp_reset_query();
 			$wp_query = $temp ?>

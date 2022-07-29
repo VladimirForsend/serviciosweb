@@ -1,11 +1,11 @@
 <?php  /*  slider home */
-add_action('init', 'slideshow_register');
+add_action('init', 'slideshow_2_register');
 
-function slideshow_register() {
+function slideshow_2_register() {
 
     $labels = array(
-        'name' => _x('Home 1', 'post type general name'),
-        'singular_name' => _x('Slider', 'post type singular name'),
+        'name' => _x('Slider Quienes Somos', 'post type general name'),
+        'singular_name' => _x('Slider Quienes Somos', 'post type singular name'),
         'add_new' => _x('Agregar nuevo', 'slideshow item'),
         'add_new_item' => __('Agregar nuevo banner'),
         'edit_item' => __('Editar banner de Slider'),
@@ -28,10 +28,10 @@ function slideshow_register() {
         'hierarchical' => false,
         'menu_position' => null,
         'supports' => array('title', 'extract'),
-        'rewrite' => array('slug' => 'slideshow', 'with_front' => FALSE)
+        'rewrite' => array('slug' => 'slideshow_2', 'with_front' => FALSE)
       ); 
 
-    register_post_type( 'slideshow' , $args );
+    register_post_type( 'slideshow_2' , $args );
 }
 
 
@@ -181,7 +181,7 @@ if( function_exists('acf_add_local_field_group') ):
                 array(
                     'param' => 'post_type',
                     'operator' => '==',
-                    'value' => 'slideshow',
+                    'value' => 'slideshow_2',
                 ),
             ),
         ),

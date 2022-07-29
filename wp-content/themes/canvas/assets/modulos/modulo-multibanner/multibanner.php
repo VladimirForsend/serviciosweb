@@ -16,7 +16,7 @@ $args = array(
 $wp_query = new WP_Query($args);
 if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
-<div id="multibanner" class="container">
+<div id="multibanner" class="container p-5">
     <h2 class="multibanner-titulo"><?php the_field('titulo_seccion'); ?></h2>
     <h4 class="multibanner-subtitulo"><?php the_field('subtitulo_seccion'); ?></h4>
     
@@ -127,14 +127,22 @@ if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
             </a>
         </div>
     </div> <!-- END ROW -->
-    <div class="multibanner-contenedor row">
-        <div class="col-6">
+    <div class="otro-contenedor row">
+        <div class="col-6 border-right">
             <div class="row">
-                col-6
+                <div class="col-6">
+                    <?php $icon = get_field('icono_otro'); 
+                    if( !empty( $icon ) ): ?>
+                        <img class="imagen" src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>">
+                    <?php endif; ?>
+                </div>
+                <div class="col-6 d-flex align-items-center justify-content-center right-purple">
+                    <h4 class="multibanner-title"><?php the_field('titulo_otro'); ?></h4>
+                </div>
             </div>
         </div>
-        <div class="col-6">
-
+        <div class="col-6 d-flex align-items-center justify-content-center ps-4">
+            <p class="m-0 multibanner-text"><?php the_field('texto_otro'); ?></p>
         </div>
     </div>
 </div>

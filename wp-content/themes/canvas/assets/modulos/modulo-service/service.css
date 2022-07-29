@@ -94,7 +94,7 @@ div.small-line {
 
 #servicioButton.accordion-button:not(.collapsed)::after {
     transform: rotate(-90deg);
-    filter: brightness(10);
+    filter: brightness(100);
     margin-left: 1rem;
     padding: 1rem;
     background-size: 20px;

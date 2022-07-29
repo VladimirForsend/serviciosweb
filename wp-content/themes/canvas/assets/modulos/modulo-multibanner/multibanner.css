@@ -12,6 +12,11 @@
     margin-bottom: 0;
 }
 
+.multibanner-text {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 #multibanner div.small-line {
     content: '';
     width: 50px;
@@ -41,6 +46,15 @@
 
 #multibanner .multibanner-contenedor .banner a:hover img{
     transform: scale(105%);
+}
+
+.right-purple {
+    border-right: 3px solid #6101ff;
+}
+
+.otro-contenedor {
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 @media (max-width:787px){

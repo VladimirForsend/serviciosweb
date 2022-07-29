@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Pagina Noticias
+ * Template Name: Pagina Quiénes Somos
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -17,7 +17,16 @@ get_header();
  ?>
 <main id="primary" class="">
 
-   
+        <!-- 1.- SLIDER INICIAL -->
+        <?php
+            include get_template_directory() . '/assets/modulos/modulo-slider-2/slider-2.php';
+        ?>
+
+        <!-- 2.- ServiSeniors -->
+        <?php
+             include get_template_directory() . '/assets/modulos/modulo-boxinfo-2/loop-modulo-boxinfo-2.php';
+        ?>
+
         <?php
         if (have_posts()) :
 
@@ -37,7 +46,7 @@ get_header();
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
-                get_template_part('template-parts/content-noticias', get_post_type());
+                get_template_part('template-parts/content-somos', get_post_type());
 
             endwhile;
 

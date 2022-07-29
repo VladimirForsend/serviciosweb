@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Pagina Somos
+ * Template Name: Pagina Despachadores
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -17,7 +17,16 @@ get_header();
  ?>
 <main id="primary" class="">
 
-   
+        <!-- 1.- SLIDER INICIAL -->
+        <?php
+            include get_template_directory() . '/assets/modulos/modulo-slider-3/slider-3.php';
+        ?>
+
+        <!-- 2.- ServiSeniors -->
+        <?php
+             include get_template_directory() . '/assets/modulos/modulo-boxinfo-3/loop-modulo-boxinfo-3.php';
+        ?>
+
         <?php
         if (have_posts()) :
 
@@ -37,7 +46,7 @@ get_header();
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
-                get_template_part('template-parts/content-somos', get_post_type());
+                get_template_part('template-parts/content-socios', get_post_type());
 
             endwhile;
 

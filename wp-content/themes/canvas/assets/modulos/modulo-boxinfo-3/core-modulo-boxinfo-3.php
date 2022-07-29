@@ -1,10 +1,10 @@
 <?php  /*  boxinfo */
 
-function boxinfo_register() {
+function boxinfo_3_register() {
 
     $labels = array(
-        'name' => _x('Home 3', 'post type general name'),
-        'singular_name' => _x('boxinfo', 'post type singular name'),
+        'name' => _x('Unete a servisenior', 'post type general name'),
+        'singular_name' => _x('Unete a senior', 'post type singular name'),
         'add_new' => _x('Agregar banner de categoría', 'slideshow_two item'),
         'add_new_item' => __('Agregar bloque web'),
         'edit_item' => __('Editar bloque web'),
@@ -28,12 +28,12 @@ function boxinfo_register() {
         'menu_icon'  => 'dashicons-grid-view',
         'hierarchical' => false,
         'menu_position' => null,
-        /*'taxonomies'	=> array( 'categoria-boxinfo', 'etiqueta-boxinfo', ), */
+        /*'taxonomies'	=> array( 'categoria-boxinfo_3', 'etiqueta-boxinfo_3', ), */
         'supports' => array('title', 'thumbnail', 'excerpt'),
-        'rewrite' => array('slug' => 'boxinfo', 'with_front' => false)
+        'rewrite' => array('slug' => 'boxinfo_3', 'with_front' => false)
       ); 
 
-    register_post_type( 'boxinfo' , $args );
+    register_post_type( 'boxinfo_3' , $args );
 }
 
-add_action('init', 'boxinfo_register');
+add_action('init', 'boxinfo_3_register');

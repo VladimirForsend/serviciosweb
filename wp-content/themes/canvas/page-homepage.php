@@ -18,9 +18,13 @@ get_header('');
 <!-- ADD PRELOADER -->
 <main id="primary" class="">
       
-        <!-- CAROUSEL HOME / SECCION 1 -->
+        <!-- SLIDER HOME / SECCION 1 -->
         <?php
             include get_template_directory() . '/assets/modulos/modulo-slider/slider.php';
+        ?>
+        <!-- CAROUSEL LOGOS -->
+        <?php
+            include get_template_directory() . '/assets/modulos/modulo-carrusel-logos/carrusel-logos.php';
         ?>
 
         <!-- EL MEJOR DESPACHO HOME / SECCION 2 -->
@@ -33,8 +37,10 @@ get_header('');
             include get_template_directory() . '/assets/modulos/modulo-service/service.php';
         ?>
 
-        <!-- PLATAFORMA MONITOREO -->
-        <h4 class="text-center mt-5 mb-5">Con nuestra plataforma podrás tener un seguimiento activo de tus pedidos</h4>
+        <!-- SEGUIMIENTO DE PEDIDOS -->
+        <?php
+            include get_template_directory() . '/assets/modulos/modulo-posters/loop-posters.php';
+        ?>
 
         <!-- ESTAMOS INTEGRADOS A / SECCION 4 -->
         <?php
@@ -51,8 +57,14 @@ get_header('');
             include get_template_directory() . '/assets/modulos/modulo-carrusel/carrusel.php';
         ?>
 
-        <!-- PLATAFORMA MONITOREO -->
-        <h4 class="text-center mt-5 mb-5" style="color:#6200ff;font-size:2rem;">Reportajes</h4>
+        <!-- REPORTAJES -->
+        <?php
+            include get_template_directory() . '/assets/modulos/modulo-microbox/loop-microbox.php';
+        ?>
+
+        <!-- PORQUE TRABAJAR CON NOSOTROS -->
+
+        <!-- BANNER FOOTER -->
 
      
         <?php

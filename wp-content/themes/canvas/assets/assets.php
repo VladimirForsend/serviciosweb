@@ -180,26 +180,46 @@ add_filter('excerpt_length', 'tn_custom_excerpt_length', 999);
 // SECCIONES DEL HOME
 // 1.- SLIDERHOME
 include get_template_directory() . '/assets/modulos/modulo-slider/core-slider.php';
-// 2.- MEJOR DESPACHO
-include get_template_directory() . '/assets/modulos/modulo-boxinfo/core-modulo-boxinfo.php';
-// 3.- SERVICIOS
-include get_template_directory() . '/assets/modulos/modulo-service/core-service.php';
-// 4.- SEGUIMIENTO DE PEDIDOS
-
-// 5.- INTEGRADOS A
-include get_template_directory() . '/assets/modulos/modulo-multibanner/core-multibanner.php';
-// 6.- NO LA PIENSES TANTO
-include get_template_directory() . '/assets/modulos/modulo-multibanner2/core-multibanner2.php';
-// 7.- CARRUSEL CARDS
-include get_template_directory() . '/assets/modulos/modulo-carrusel/core-carrusel.php';
-
-include get_template_directory() . '/assets/modulos/modulo-microbox/core-microbox.php';
-include get_template_directory() . '/assets/modulos/modulo-parallax-block/core-parallax-block.php';
+// 2.- carrusel LOGOS
 include get_template_directory() . '/assets/modulos/modulo-carrusel-logos/core-carrusel-logo.php';
 
+// 3.- MEJOR DESPACHO
+include get_template_directory() . '/assets/modulos/modulo-boxinfo/core-modulo-boxinfo.php';
 
+// 4.- SERVICIOS
+include get_template_directory() . '/assets/modulos/modulo-service/core-service.php';
 
-//widget wsapp
-include get_template_directory() . '/assets/widgets/widget-whatsapp.php';
+// 5.- SEGUIMIENTO DE PEDIDOS
+include get_template_directory() . '/assets/modulos/modulo-posters/core-posters.php';
 
+// 6.- INTEGRADOS A
+include get_template_directory() . '/assets/modulos/modulo-multibanner/core-multibanner.php';
 
+// 7.- NO LA PIENSES TANTO
+include get_template_directory() . '/assets/modulos/modulo-multibanner2/core-multibanner2.php';
+
+// 8.- PALABRAS DE CLIENTES
+include get_template_directory() . '/assets/modulos/modulo-tarjetas/core-tarjetas.php';
+
+// 9.- REPORTAJES
+include get_template_directory() . '/assets/modulos/modulo-microbox/core-microbox.php';
+
+// 10.- ¿POR QUÉ TRABAJAR CON NOSOTROS?
+include get_template_directory() . '/assets/modulos/modulo-infobox/core-infobox.php';
+
+// 11.- BANNER
+include get_template_directory() . '/assets/modulos/modulo-banner/core-banner.php';
+
+// PAGINA QUIENES SOMOS
+// 1.- SLIDERHOME
+include get_template_directory() . '/assets/modulos/modulo-slider-2/core-slider-2.php';
+
+// 2.- MEJOR DESPACHO
+include get_template_directory() . '/assets/modulos/modulo-boxinfo-2/core-modulo-boxinfo-2.php';
+
+// PAGINA DESPACHADORES
+// 1.- SLIDERHOME
+include get_template_directory() . '/assets/modulos/modulo-slider-3/core-slider-3.php';
+
+// 2.- MEJOR DESPACHO
+include get_template_directory() . '/assets/modulos/modulo-boxinfo-3/core-modulo-boxinfo-3.php';

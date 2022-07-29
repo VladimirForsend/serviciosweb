@@ -3,7 +3,7 @@
 function multibanner_register() {
 
     $labels = array(
-        'name' => _x('Logos Integraciones', 'post type general name'),
+        'name' => _x('Home 6', 'post type general name'),
         'singular_name' => _x('Logos Integraciones', 'post type singular name'),
         'add_new' => _x('Agregar nuevo socio', 'slideshow_two item'),
         'add_new_item' => __('Agregar nuevo socio'),
