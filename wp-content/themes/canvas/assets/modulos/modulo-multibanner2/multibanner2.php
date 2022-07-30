@@ -3,8 +3,6 @@
 </style>
 
 <div id="multibannerb" class="container my-5 pt-5">
-
-
     <div class="multibanner-contenedor row">
 
     <?php
@@ -23,8 +21,8 @@
 
 
     <div class="col-4">
-        <div class="circle-green">
-            <img src="" alt="">
+        <?php $image = get_field('imagen_pienses_tanto'); ?>
+        <div class="circle-green" style="background-size:cover; background-image: url('<?php echo esc_url($image['url']); ?>')">   
         </div>
     </div>
     <div class="col-4">

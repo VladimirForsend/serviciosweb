@@ -7,9 +7,9 @@ add_action( 'init', 'banner', 0 );
 function banner() {
 
 	$labels = array(
-		'name'                  => _x( 'banner', 'Post Type General Name', 'banner' ),
+		'name'                  => _x( 'Home 11: Banner Footer', 'Post Type General Name', 'banner' ),
 		'singular_name'         => _x( 'banner', 'Post Type Singular Name', 'banner' ),
-		'menu_name'             => __( 'banner', 'banner' ),
+		'menu_name'             => __( 'Home 11: Banner Footer', 'banner' ),
 		'name_admin_bar'        => __( 'banner', 'banner' ),
 		'archives'              => __( 'banner', 'banner' ),
 		'attributes'            => __( 'banner', 'banner' ),
@@ -46,9 +46,8 @@ function banner() {
 		'public'                => true,
 		'show_ui'               => true, 
 		'show_in_menu'          => true,
-		'menu_position'         => 10,
+		'menu_position'         => 41,
 		'menu_icon'             => 'dashicons-book-alt',
-		'menu_position' => null,
 		'query_var' => true,
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
@@ -61,64 +60,6 @@ function banner() {
 		
 	);
 
-
-
-
 	register_post_type( 'banner', $args );
 
 }
-
- /*categorias personalizadas para banner*/
- function categoria_banner() {
-
-	register_taxonomy(
-		'categoria-banner',
-		'banner',
-		array(
-			'label' => __( 'Categoria banner' ),
-			'rewrite' => array( 'slug' => 'categoria-banner' ),
-			'hierarchical' => true,
-			 // Allow automatic creation of taxonomy columns on associated post-types table?
-			 'show_admin_column'   => true,
-			 // Show in quick edit panel?
-			 'show_in_quick_edit'  => true,
-		)
-	);
-}
-add_action( 'init', 'categoria_banner' );
-
-
-function etiqueta_banner() {
-
-register_taxonomy(
-			'etiqueta-banner','banner',array(
-			'hierarchical' => false,
-			'labels' => $labels,
-			'label' => __( 'Etiqueta banner' ),
-			 // Allow automatic creation of taxonomy columns on associated post-types table?
-			 'show_admin_column'   => true,
-			 // Show in quick edit panel?
-			 'show_in_quick_edit'  => true,
-			'update_count_callback' => '_update_post_term_count',
-			'bannerquery_var' => true,
-			'rewrite' => array( 'slug' => 'etiqueta-banner' ),
-		)
-	); 
-
-
-
-
-}
-add_action( 'init', 'etiqueta_banner' );
-
-function display_banner( $bannerquery ) {
-	if( is_category() || is_tag() && empty( $bannerquery->bannerquery_vars['bannerfilter'] ) ) {
-	$bannerquery->set( 'post_type', array(
-	'post', 'nav_menu_item', 'banner', 
-	'post', 'nav_menu_item', 'banner', 
-	));
-	return $bannerquery;
-	}
-   }
-   
-   add_filter( 'pre_get_posts', 'display_banner' );

@@ -10,13 +10,17 @@
 
 #carrusel_logos .carrusel-interior {
     outline: none;
-    height: 100px;
+    height: 80px;
     width: 12.3%;
+    max-width: 200px;
     background-repeat: no-repeat;
-    padding: 0px;
+    padding: 0px 1%;
     background-position: center center;
     background-size: auto 100%;
     border: 0px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
   
 #carrusel_logos .carousel-inner {

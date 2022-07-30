@@ -3,7 +3,7 @@
 function multibanner_register() {
 
     $labels = array(
-        'name' => _x('Home 6', 'post type general name'),
+        'name' => _x('Home 6: Nos integramos', 'post type general name'),
         'singular_name' => _x('Logos Integraciones', 'post type singular name'),
         'add_new' => _x('Agregar nuevo socio', 'slideshow_two item'),
         'add_new_item' => __('Agregar nuevo socio'),
@@ -27,7 +27,7 @@ function multibanner_register() {
         'capability_type' => 'post',
         'menu_icon'  => 'dashicons-images-alt',
         'hierarchical' => false,
-        'menu_position' => null,
+        'menu_position' => 36,
         /*'taxonomies'	=> array( 'categoria-multibanner', 'etiqueta-multibanner', ), */
         'supports' => array('title', 'thumbnail'),
         'rewrite' => array('slug' => 'multibanner', 'with_front' => false)

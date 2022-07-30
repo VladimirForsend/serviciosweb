@@ -11,7 +11,7 @@ add_post_type_support('page', 'excerpt');
 
 
 // Disables the block editor from managing widgets.
-add_filter( 'use_widgets_block_editor', '__return_false' );
+// add_filter( 'use_widgets_block_editor', '__return_false' );
 
 function comercio_framework()
 {
@@ -150,13 +150,11 @@ add_action('init', 'menu_mobile');
 /*widget assets*/
 function widget_menu_footer()
 {
-    register_sidebar(array('name' => 'Menu Logo y redes sociales', 'id' => 'menu_uno_izquierdo', 'before_widget' => '<div id="%1$S" class="menu-footer">', 'after_widget' => '</div>', 'before_title' => '<h5 class="titulo-menu-footer">', 'after_title' => '</h5>'));
-    register_sidebar(array('name' => 'Menu Servicio al cliente', 'id' => 'menu_dos_izquierdo', 'before_widget' => '<div id="%1$S" class="menu-footer menu-tipo mt-3">', 'after_widget' => '</div>', 'before_title' => '<h5 class="titulo-menu-footer">', 'after_title' => '</h5>'));
-    register_sidebar(array('name' => 'Menu acerca de la tienda', 'id' => 'menu_uno_derecho', 'before_widget' => '<div id="%1$S" class="menu-footer menu-tipo mt-3">', 'after_widget' => '</div>', 'before_title' => '<h5 class="titulo-menu-footer">', 'after_title' => '</h5>'));
-    register_sidebar(array('name' => 'Menu cuatro', 'id' => 'menu_dos_derecho', 'before_widget' => '<div id="%1$S" class="menu-footer menu-tipo mt-3">', 'after_widget' => '</div>', 'before_title' => '<h5 class="titulo-menu-footer">', 'after_title' => '</h5>'));
-    register_sidebar(array('name' => 'Menu cinco', 'id' => 'menu_derecho_form', 'before_widget' => '<div id="%1$S" class="menu-footer menu-tipo mt-3">', 'after_widget' => '</div>', 'before_title' => '<h5 class="titulo-menu-footer">', 'after_title' => '</h5>'));
+    register_sidebar(array('name' => 'Footer logo', 'id' => 'menu_footer_logo', 'before_widget' => '<div id="%1$S" class="menu-footer menu-tipo mt-3">', 'after_widget' => '</div>', 'before_title' => '<h5 class="titulo-menu-footer">', 'after_title' => '</h5>'));
+    register_sidebar(array('name' => 'Menu uno', 'id' => 'menu_uno', 'before_widget' => '<div id="%1$S" class="menu-footer menu-tipo">', 'after_widget' => '</div>', 'before_title' => '<h5 class="titulo-menu-footer">', 'after_title' => '</h5>'));
+    register_sidebar(array('name' => 'Menu dos', 'id' => 'menu_dos', 'before_widget' => '<div id="%1$S" class="menu-footer menu-tipo">', 'after_widget' => '</div>', 'before_title' => '<h5 class="titulo-menu-footer">', 'after_title' => '</h5>'));
+    register_sidebar(array('name' => 'Menu Logo y redes sociales', 'id' => 'menu_rrss', 'before_widget' => '<div id="%1$S" class="menu-footer">', 'after_widget' => '</div>', 'before_title' => '<h5 class="titulo-menu-footer">', 'after_title' => '</h5>'));
     register_sidebar(array('name' => 'Menu pie pagina', 'id' => 'menu_pie_pagina', 'before_widget' => '<div id="%1$S" class="menu-footer menu-tipo mt-3">', 'after_widget' => '</div>', 'before_title' => '<h5 class="titulo-menu-footer">', 'after_title' => '</h5>'));
-    register_sidebar(array('name' => 'Menu logos footer', 'id' => 'menu_logos', 'before_widget' => '<div id="%1$S" class="menu-footer menu-tipo mt-3">', 'after_widget' => '</div>', 'before_title' => '<h5 class="titulo-menu-footer">', 'after_title' => '</h5>'));
 }
 
 add_action('widgets_init', 'widget_menu_footer');
@@ -199,7 +197,7 @@ include get_template_directory() . '/assets/modulos/modulo-multibanner/core-mult
 include get_template_directory() . '/assets/modulos/modulo-multibanner2/core-multibanner2.php';
 
 // 8.- PALABRAS DE CLIENTES
-include get_template_directory() . '/assets/modulos/modulo-tarjetas/core-tarjetas.php';
+include get_template_directory() . '/assets/modulos/modulo-carrusel/core-carrusel.php';
 
 // 9.- REPORTAJES
 include get_template_directory() . '/assets/modulos/modulo-microbox/core-microbox.php';

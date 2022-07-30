@@ -41,6 +41,7 @@
       
 .carousel-item-plataforma[data-pos="0"] {
     z-index: 5;
+    transform: scale(1.2);
 }
       
 .carousel-item-plataforma[data-pos="-1"], .carousel-item-plataforma[data-pos="1"] {

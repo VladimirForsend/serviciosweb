@@ -4,7 +4,7 @@ add_action('init', 'slideshow_register');
 function slideshow_register() {
 
     $labels = array(
-        'name' => _x('Home 1', 'post type general name'),
+        'name' => _x('Home 1: Slider Principal', 'post type general name'),
         'singular_name' => _x('Slider', 'post type singular name'),
         'add_new' => _x('Agregar nuevo', 'slideshow item'),
         'add_new_item' => __('Agregar nuevo banner'),
@@ -26,7 +26,7 @@ function slideshow_register() {
         'rewrite' => true,
         'capability_type' => 'post',
         'hierarchical' => false,
-        'menu_position' => null,
+        'menu_position' => 30,
         'supports' => array('title', 'extract'),
         'rewrite' => array('slug' => 'slideshow', 'with_front' => FALSE)
       ); 

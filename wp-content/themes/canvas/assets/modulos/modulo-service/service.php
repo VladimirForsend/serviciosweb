@@ -12,6 +12,7 @@
         $temp = $wp_query;
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $post_per_page = 6; // -1 shows all posts
+        $collapse = false;
         $args = array(
             'post_type' => 'service',
             'orderby' => 'date',
@@ -25,14 +26,15 @@
         if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
             <div class="service-tabs col-12 p-0">
-                <button id="servicioButton" class="accordion-button collapsed boton" data-bs-toggle="collapse" data-bs-target="#drop<?php the_ID(); ?>" aria-expanded="false" aria-controls="drop<?php the_ID(); ?>">
+                <button id="servicioButton" class="accordion-button <?php if ($collapse) { print("collapsed"); }; ?> boton" data-bs-toggle="collapse" data-bs-target="#drop<?php the_ID(); ?>" aria-expanded="<?php if ($collapse==false) { print("true"); }; ?>" aria-controls="drop<?php the_ID(); ?>">
                     <p class="service-tab m-0"><?php echo get_the_title(); ?></p>
                 </button>
             </div>
 
             <div class="tabs-content col-8 p-0" style="background-color:#ffffff;position:absolute;right:0;z-index:999;">
                 <div class="row">
-                    <div id="drop<?php the_ID(); ?>" class="accordion-collapse collapse" data-bs-parent="#moduloservice">
+                    <div id="drop<?php the_ID(); ?>" class="accordion-collapse collapse <?php if (!$collapse) { print("show"); }; ?>" data-bs-parent="#moduloservice">
+                        <?php $collapse = true; ?>
                         <!-- foto servicio -->
                         <div class="row">
                             <div class="col-6 p-0">

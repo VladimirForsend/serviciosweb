@@ -1,20 +1,17 @@
 <div id="video-home" class="jumbotron col-12 col-md-8 mt-3 mb-0 p-3">
 <div class="row flex-column justify-content-center align-items-center">
 	<?php $active=true;
-                  $temp = $wp_query;
-                  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                  $post_per_page = 10; // -1 shows all posts
-                  $args=array(
-                    'post_type' => 'videos',
-                    'orderby' => 'date',
-                    'order' => 'ASC',
-                    'paged' => $paged,
-                    'posts_per_page' => $post_per_page);
-                    $wp_query = new WP_Query($args);
-					if( have_posts() ) : while ($wp_query->have_posts()) : $wp_query->the_post();?>
-
- 
-
+  $temp = $wp_query;
+  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+  $post_per_page = 10; // -1 shows all posts
+  $args=array(
+    'post_type' => 'videos',
+    'orderby' => 'date',
+    'order' => 'ASC',
+    'paged' => $paged,
+    'posts_per_page' => $post_per_page);
+    $wp_query = new WP_Query($args);
+if( have_posts() ) : while ($wp_query->have_posts()) : $wp_query->the_post();?>
 
   <div class="video-invitacion col-12 col-md-12">
 

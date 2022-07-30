@@ -3,7 +3,7 @@
 function carrusel_register() {
 
     $labels = array(
-        'name' => _x('Carrusel Testimonios', 'post type general name'),
+        'name' => _x('Home 8: Testimonios', 'post type general name'),
         'singular_name' => _x('Carrusel Testimonios', 'post type singular name'),
         'add_new' => _x('Agregar nuevo testimonio', 'slideshow_two item'),
         'add_new_item' => __('Agregar nuevo testimonio'),
@@ -27,7 +27,7 @@ function carrusel_register() {
         'capability_type' => 'post',
         'menu_icon'  => 'dashicons-images-alt',
         'hierarchical' => false,
-        'menu_position' => null,
+        'menu_position' => 38,
         'taxonomies'	=> array( 'categoria-carrusel', 'etiqueta-carrusel', ), 
         'supports' => array('title', 'thumbnail'),
         'rewrite' => array('slug' => 'carrusel', 'with_front' => false)

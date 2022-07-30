@@ -4,9 +4,9 @@
 function posters() {
 
 	$labels = array(
-		'name'                  => _x( 'Home 5', 'Post Type General Name', 'posters' ),
+		'name'                  => _x( 'Home 5: Nuestra plataforma', 'Post Type General Name', 'posters' ),
 		'singular_name'         => _x( 'poster', 'Post Type Singular Name', 'posters' ),
-		'menu_name'             => __( 'Home 5', 'posters' ),
+		'menu_name'             => __( 'Home 5: Nuestra plataforma', 'posters' ),
 		'name_admin_bar'        => __( 'Seguimiento de Pedidos', 'posters' ),
 		'archives'              => __( 'posters', 'posters' ),
 		'attributes'            => __( 'posters', 'posters' ),
@@ -45,7 +45,7 @@ function posters() {
 		'show_in_menu'          => true,
 		'menu_position'         => 10,
 		'menu_icon'             => 'dashicons-book-alt',
-		'menu_position' => null,
+		'menu_position' => 35,
 		'query_var' => true,
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,

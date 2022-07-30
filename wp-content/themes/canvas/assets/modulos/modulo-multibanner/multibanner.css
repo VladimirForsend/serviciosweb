@@ -54,7 +54,7 @@
 
 .otro-contenedor {
     max-width: 80%;
-    margin: 0 auto;
+    margin: 2rem auto 0;
 }
 
 @media (max-width:787px){

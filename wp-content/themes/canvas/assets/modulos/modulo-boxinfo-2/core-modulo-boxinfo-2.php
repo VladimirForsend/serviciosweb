@@ -1,10 +1,10 @@
 <?php  /*  boxinfo */
 
-function boxinfo_register() {
+function boxinfo_2_register() {
 
     $labels = array(
-        'name' => _x('Home 3', 'post type general name'),
-        'singular_name' => _x('boxinfo', 'post type singular name'),
+        'name' => _x('Quienes somos 2: Proposito', 'post type general name'),
+        'singular_name' => _x('Quienes somos 2: Proposito', 'post type singular name'),
         'add_new' => _x('Agregar banner de categoría', 'slideshow_two item'),
         'add_new_item' => __('Agregar bloque web'),
         'edit_item' => __('Editar bloque web'),
@@ -27,13 +27,13 @@ function boxinfo_register() {
         'capability_type' => 'post',
         'menu_icon'  => 'dashicons-grid-view',
         'hierarchical' => false,
-        'menu_position' => 32,
-        /*'taxonomies'	=> array( 'categoria-boxinfo', 'etiqueta-boxinfo', ), */
+        'menu_position' => 43,
+        /*'taxonomies'	=> array( 'categoria-boxinfo_2', 'etiqueta-boxinfo_2', ), */
         'supports' => array('title', 'thumbnail', 'excerpt'),
-        'rewrite' => array('slug' => 'boxinfo', 'with_front' => false)
+        'rewrite' => array('slug' => 'boxinfo_2', 'with_front' => false)
       ); 
 
-    register_post_type( 'boxinfo' , $args );
+    register_post_type( 'boxinfo_2' , $args );
 }
 
-add_action('init', 'boxinfo_register');
+add_action('init', 'boxinfo_2_register');

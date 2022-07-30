@@ -13,16 +13,9 @@
         );
         $wp_query = new WP_Query($args);
         if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-
-
-
-
                 <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>">
                     <div class="boton-nuestras-tiendas"><a class="boton-interior" href="#"><?php echo get_the_excerpt(); ?></a> </div>
                 </div>
-
-
-
             <?php endwhile;
         else : ?>
         <?php endif;

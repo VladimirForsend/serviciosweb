@@ -1,0 +1,78 @@
+.tarjeta-carr-cat {
+    position: relative;
+}
+
+.tarjeta-carr-cat a {
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    height: 30px;
+    padding: 1rem;
+    display: flex;
+    width: 100px;
+    top: -30px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.tarjeta-contenedor-boxinfo img {
+    z-index: 99;
+}
+
+.boxinfo-text {
+    max-width: 400px;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.button-boxinfo {
+    background: #6200ff;
+    border: #6200ff;
+    z-index: 99;
+    color: #ffffff;
+    /* text-decoration: none!important; */
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 1rem;
+    transition: .5s;
+}
+
+.button-boxinfo:hover {
+    background: #94fc01;
+    box-shadow: 1px 1px 3px rgb(115 194 4 / 70%);
+    border: 0 solid #96ff00;
+    z-index: 99;
+    color: #6200ff;
+    /* text-decoration: none!important; */
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+
+/* SERVISENIOR INFO */
+
+.tarjeta-contenedor-boxinfo figcaption {
+    display: none;
+}
+
+.tarjeta-contenedor-boxinfo {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(-505, -50%);
+    border-radius: 5%;
+    box-sizing: border-box;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(2.0);
+    }
+
+    100% {
+        transform: scale(0.7);
+    }
+}

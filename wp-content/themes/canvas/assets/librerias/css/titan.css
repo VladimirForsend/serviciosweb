@@ -297,11 +297,8 @@
     /*footer*/
     
     footer.site-footer {
-        color: #fff;
         font-size: 0.8rem;
         font-weight: 300;
-        background-color: #090909;
-        border-top: #090909;
     }
     
     footer.site-footer .titulos-menus-cat {
@@ -321,10 +318,6 @@
         font-weight: 300!important;
         font-size: 1rem;
         margin-left: 0px;
-    }
-    
-    footer.site-footer a {
-        color: #fff;
     }
     
     footer ul {
@@ -427,10 +420,7 @@
     }
     
     footer.site-footer {
-        color: #fff;
         font-size: 0.8rem;
-        background-color: #222;
-        border-top: 5px solid var(--color-cliente);
         margin-top: 3rem;
     }
     

@@ -4,7 +4,6 @@
 
 <div class="container mt-3 contenedor-productos-home carusel--productos">
     
-
     <!--productos destacados-->
     <ul class="mt-3 mb-5 carusel-productos px-0 lista-productos lista-tipo-2">
 

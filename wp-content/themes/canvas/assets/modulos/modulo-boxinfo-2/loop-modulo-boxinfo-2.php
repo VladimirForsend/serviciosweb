@@ -1,5 +1,5 @@
 <style>
-    <?php include get_template_directory() . '/assets/modulos/modulo-boxinfo/modulo-boxinfo.css'; ?>
+    <?php include get_template_directory() . '/assets/modulos/modulo-boxinfo-2/modulo-boxinfo-2.css'; ?>
 </style>
 
 <div class="container-fluid contenedor-boxinfo bg-white">
@@ -17,7 +17,7 @@
     $wp_query = new WP_Query($args);
 
     if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-        <div class="row m-0">
+        <div class="row">
             <div class="col-12 col-md-6 mx-auto">
                 <!--productos destacados-->
                 <ul class="py-5 m-0">
@@ -31,13 +31,12 @@
             <div class="col-12 col-md-6 mx-auto d-flex justify-content-start align-items-center">
                 <figcaption class="<?php the_field('alinear_texto'); ?>">
                     <h4 style="    
-                    font-size: 2.5rem;
+                    font-size: 2rem;
                     color: #6200ff;
                     font-weight: bolder;
                     margin-bottom: 1rem;
                     "><?php echo get_the_title(); ?></h4>
                     <p class="boxinfo-text"><?php echo get_the_excerpt(); ?></p>
-                    <button class="button-boxinfo"><a style="text-decoration: none;" href="<?php echo esc_url(home_url('/quienes-somos')); ?>">conoce más</a></button>
                 </figcaption>
             </div>
         </div>

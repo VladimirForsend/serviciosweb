@@ -26,7 +26,7 @@ function service_register() {
         'capability_type' => 'post',
         'menu_icon'  => 'dashicons-editor-help',
         'hierarchical' => false,
-        'menu_position' => null,
+        'menu_position' => 34,
         'taxonomies' => array('categoria-service'),
         'supports' => array('title', 'thumbnail'),
         'rewrite' => array('slug' => 'service', 'with_front' => FALSE)

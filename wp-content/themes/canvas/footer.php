@@ -11,15 +11,10 @@
  */
 
 ?>
-<footer id="colophon" class="site-footer">
-
-<?php require get_template_directory() . '/assets/templates/footers/footer-basico.php'; ?>
-
-</footer><!-- #colophon -->
-
-</div><!-- #page -->
-
-<?php wp_footer(); ?>
+        <footer id="colophon" class="site-footer">
+            <?php require get_template_directory() . '/assets/templates/footers/footer.php'; ?>
+        </footer><!-- #colophon -->
+    </div><!-- #page -->
 </body>
 
 </html>

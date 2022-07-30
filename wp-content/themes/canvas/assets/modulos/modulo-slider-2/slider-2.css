@@ -25,3 +25,9 @@
     text-transform: uppercase;
     font-weight: bolder;
 }
+
+#carouselExampleControls2 .carousel-item a {
+    width: 100%;
+    height: 46vw;
+    background: #fff;
+}

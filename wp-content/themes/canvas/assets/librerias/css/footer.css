@@ -1,0 +1,37 @@
+.logo-footer figure img {
+    max-width: 300px;
+    padding: 1rem;
+}
+
+.menu-rrss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-rrss .menu-footer {
+    margin: 0.5rem;
+}
+
+.menu-rrss .wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor svg {
+    width: 3em;
+    height: 3em;
+    fill: #ffffff;
+}
+
+.menu-footer h5 {
+    color: #6200ff;
+}
+
+footer .menu-footer.menu-tipo a {
+    padding-bottom: 0;
+    padding-left: 0;
+    font-size: 0.875rem;
+    color: #888;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+li.wp-block-pages-list__item:hover a {
+    color: #6200ff;
+}

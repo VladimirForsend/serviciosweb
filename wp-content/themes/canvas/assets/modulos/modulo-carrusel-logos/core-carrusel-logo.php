@@ -3,10 +3,10 @@
 
 function carrusel_logos() {
 	$labels = array(
-		'name'                  => _x( 'Home 2', 'Post Type General Name' ),
-		'singular_name'         => _x( 'Home 2', 'Post Type Singular Name' ),
-		'menu_name'             => __( 'Home 2', 'carrusel_logos' ),
-		'name_admin_bar'        => __( 'Home 2', 'carrusel_logos' ),
+		'name'                  => _x( 'Home 2: Logos', 'Post Type General Name' ),
+		'singular_name'         => _x( 'Carrusel de logos', 'Post Type Singular Name' ),
+		'menu_name'             => __( 'Home 2: Logos', 'carrusel_logos' ),
+		'name_admin_bar'        => __( 'Carrusel de logos', 'carrusel_logos' ),
 		'archives'              => __( 'Carrusel de logos', 'carrusel_logos' ),
 		'attributes'            => __( 'Carrusel de logos', 'carrusel_logos' ),
 		'parent_item_colon'     => __( 'Basado en:', 'carrusel_logos' ),
@@ -43,7 +43,7 @@ function carrusel_logos() {
 		'show_ui'               => true, 
 		'show_in_menu'          => true,
 		'menu_icon'             => 'dashicons-book-alt',
-		'menu_position' => null,
+		'menu_position'         => 31,
 		'query_var' => true,
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,

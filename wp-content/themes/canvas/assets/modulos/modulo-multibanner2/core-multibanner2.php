@@ -3,7 +3,7 @@
 function multibannerb_register() {
 
     $labels = array(
-        'name' => _x('Home 7', 'post type general name'),
+        'name' => _x('Home 7: ¡No la pienses tanto!', 'post type general name'),
         'singular_name' => _x('No la pienses tanto', 'post type singular name'),
         'add_new' => _x('Agregar nuevo banner', 'multibannerb item'),
         'add_new_item' => __('Agregar nuevo banner'),
@@ -27,7 +27,7 @@ function multibannerb_register() {
         'capability_type' => 'post',
         'menu_icon'  => 'dashicons-images-alt',
         'hierarchical' => false,
-        'menu_position' => null,
+        'menu_position' => 37,
         /*'taxonomies'	=> array( 'categoria-multibannerb', 'etiqueta-multibannerb', ), */
         'supports' => array('title', 'thumbnail'),
         'rewrite' => array('slug' => 'multibannerb', 'with_front' => false)

@@ -90,3 +90,8 @@
     font-size: 0.9rem;
     letter-spacing: -.03rem;
 }
+
+.infobox-title.text-center {
+    color: #6200ff;
+    font-size: 2rem;
+}

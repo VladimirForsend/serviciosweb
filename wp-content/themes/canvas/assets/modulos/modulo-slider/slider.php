@@ -30,7 +30,9 @@
         font-size: 2vw;
         ">99% de efectividad en las entregas<br/> Somos el primer Last mile con propósito</h3>
         <a style="text-decoration: none;" href=""><button class="action-button">Comenzar a despachar</button></a>
-        <?php $active = true;
+        
+        <?php 
+        $active = true;
         $temp = $wp_query;
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $post_per_page = 5; // -1 shows all posts
@@ -49,13 +51,14 @@
                     <?php $active = false; ?>
                     <a class="w-100" <?php $linkslide = get_field('link_del_banner'); if(!empty($linkslide)){?>href="<?php the_field('link_del_banner'); ?>"<?php }; ?>>
                         <!--imagen mobile-->
-                        <?php $image = get_field('imagen_mobile'); $image2 = get_field('imagen_escritorio'); ?>
-                        <?php if (!empty($image)) : ?>
+                        <?php $image = get_field('imagen_mobile'); 
+                        if (!empty($image)) : ?>
                             <img class="<?php if(!empty($image2)){ ?>d-sm-none<?php }; ?>" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                         <?php endif; ?>
 
                         <!--imagen escritorio-->
-                        <?php if (!empty($image2)) : ?>
+                        <?php $image2 = get_field('imagen_escritorio');
+                        if (!empty($image2)) : ?>
                             <img class="<?php if(!empty($image)){ ?>d-none d-sm-block<?php }; ?>" src="<?php echo esc_url($image2['url']); ?>" alt="<?php echo esc_attr($image2['alt']); ?>" />
                         <?php endif; ?>
                     </a>

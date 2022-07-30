@@ -5,7 +5,7 @@
          <?php $active = true;
          $temp = $wp_query;
          $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-         $post_per_page = 20; // -1 shows all posts
+         $post_per_page = 8; // -1 shows all posts
          $args = array(
             'post_type' => 'carrusel_logos',
             'orderby' => 'date',
@@ -21,63 +21,72 @@
          <?php
          $image = get_field('carrusel_uno_logo');
          if (!empty($image)) : ?>
-         <div class="carrusel-interior slidel" style="background-image: url('<?php echo esc_url($image['url']); ?>')">
+         <div class="carrusel-interior slidel">
+            <img class="carrusel-logo" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
             <?php endif; ?>
          </div>
 
          <?php
-         $image = get_field('carrusel_dos_logo');
-         if (!empty($image)) : ?>
-         <div class="carrusel-interior slidel" style="background-image: url('<?php echo esc_url($image['url']); ?>')">
+         $image2 = get_field('carrusel_dos_logo');
+         if (!empty($image2)) : ?>
+         <div class="carrusel-interior slidel">
+            <img class="carrusel-logo" src="<?php echo esc_url($image2['url']); ?>" alt="<?php echo esc_attr($image2['alt']); ?>">   
             <?php endif; ?>
          </div>
 
          <?php
-         $image = get_field('carrusel_tres_logo');
-         if (!empty($image)) : ?>
-         <div class="carrusel-interior slidel" style="background-image: url('<?php echo esc_url($image['url']); ?>')">
+         $image3 = get_field('carrusel_tres_logo');
+         if (!empty($image3)) : ?>
+         <div class="carrusel-interior slidel">
+            <img class="carrusel-logo" src="<?php echo esc_url($image3['url']); ?>" alt="<?php echo esc_attr($image3['alt']); ?>">   
             <?php endif; ?>
          </div>
 
          <?php
-         $image = get_field('carrusel_cuatro_logo');
-         if (!empty($image)) : ?>
-         <div class="carrusel-interior slidel" style="background-image: url('<?php echo esc_url($image['url']); ?>')">
+         $image4 = get_field('carrusel_cuatro_logo');
+         if (!empty($image4)) : ?>
+         <div class="carrusel-interior slidel">
+            <img class="carrusel-logo" src="<?php echo esc_url($image4['url']); ?>" alt="<?php echo esc_attr($image4['alt']); ?>">   
             <?php endif; ?>
          </div>
 
          <?php
-         $image = get_field('carrusel_cinco_logo');
-         if (!empty($image)) : ?>
-         <div class="carrusel-interior slidel" style="background-image: url('<?php echo esc_url($image['url']); ?>')">
+         $image5 = get_field('carrusel_cinco_logo');
+         if (!empty($image5)) : ?>
+         <div class="carrusel-interior slidel">
+            <img class="carrusel-logo" src="<?php echo esc_url($image5['url']); ?>" alt="<?php echo esc_attr($image5['alt']); ?>">   
             <?php endif; ?>
          </div>
 
          <?php
-         $image = get_field('carrusel_seis_logo');
-         if (!empty($image)) : ?>
-         <div class="carrusel-interior slidel" style="background-image: url('<?php echo esc_url($image['url']); ?>')">
+         $image6 = get_field('carrusel_seis_logo');
+         if (!empty($image6)) : ?>
+         <div class="carrusel-interior slidel">
+            <img class="carrusel-logo" src="<?php echo esc_url($image6['url']); ?>" alt="<?php echo esc_attr($image6['alt']); ?>">   
             <?php endif; ?>
          </div>
 
          <?php
-         $image = get_field('carrusel_siete_logo');
-         if (!empty($image)) : ?>
-         <div class="carrusel-interior slidel" style="background-image: url('<?php echo esc_url($image['url']); ?>')">
+         $image7 = get_field('carrusel_siete_logo');
+         if (!empty($image7)) : ?>
+         <div class="carrusel-interior slidel">
+            <img class="carrusel-logo" src="<?php echo esc_url($image7['url']); ?>" alt="<?php echo esc_attr($image7['alt']); ?>">   
             <?php endif; ?>
          </div>
 
          <?php
-         $image = get_field('carrusel_ocho_logo');
-         if (!empty($image)) : ?>
-         <div class="carrusel-interior slidel" style="background-image: url('<?php echo esc_url($image['url']); ?>')">
+         $image8 = get_field('carrusel_ocho_logo');
+         if (!empty($image8)) : ?>
+         <div class="carrusel-interior slidel">
+            <img class="carrusel-logo" src="<?php echo esc_url($image8['url']); ?>" alt="<?php echo esc_attr($image8['alt']); ?>">   
             <?php endif; ?>
          </div>
 
          <?php
-         $image = get_field('carrusel_nueve_logo');
-         if (!empty($image)) : ?>
-         <div class="carrusel-interior slidel" style="background-image: url('<?php echo esc_url($image['url']); ?>')">
+         $image9 = get_field('carrusel_nueve_logo');
+         if (!empty($image9)) : ?>
+          <div class="carrusel-interior slidel">
+            <img class="carrusel-logo" src="<?php echo esc_url($image9['url']); ?>" alt="<?php echo esc_attr($image9['alt']); ?>">   
             <?php endif; ?>
          </div>
       <?php endwhile; ?>

@@ -4,9 +4,9 @@
 function microbox() {
 
 	$labels = array(
-		'name'                  => _x( 'Reportajes', 'Post Type General Name', 'microbox' ),
+		'name'                  => _x( 'Home 9: Reportajes', 'Post Type General Name', 'microbox' ),
 		'singular_name'         => _x( 'Reportajes', 'Post Type Singular Name', 'microbox' ),
-		'menu_name'             => __( 'Reportajes', 'microbox' ),
+		'menu_name'             => __( 'Home 9: Reportajes', 'microbox' ),
 		'name_admin_bar'        => __( 'Reportajes', 'microbox' ),
 		'archives'              => __( 'Reportajes', 'microbox' ),
 		'attributes'            => __( 'Reportajes', 'microbox' ),
@@ -45,7 +45,7 @@ function microbox() {
 		'show_in_menu'          => true,
 		'menu_position'         => 10,
 		'menu_icon'             => 'dashicons-book-alt',
-		'menu_position' => null,
+		'menu_position' => 39,
 		'query_var' => true,
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
