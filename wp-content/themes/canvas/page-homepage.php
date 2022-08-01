@@ -18,59 +18,59 @@ get_header('');
 <!-- ADD PRELOADER -->
 <main id="primary" class="">
       
-        <!-- SLIDER HOME / SECCION 1 -->
-        <?php
-            include get_template_directory() . '/assets/modulos/modulo-slider/slider.php';
-        ?>
-        <!-- CAROUSEL LOGOS -->
-        <?php
-            include get_template_directory() . '/assets/modulos/modulo-carrusel-logos/carrusel-logos.php';
-        ?>
+    <!-- SLIDER HOME / SECCION 1 -->
+    <?php
+        include get_template_directory() . '/assets/modulos/modulo-slider/slider.php';
+    ?>
+    <!-- CAROUSEL LOGOS 2 -->
+    <?php
+        include get_template_directory() . '/assets/modulos/modulo-carrusel-logos/carrusel-logos.php';
+    ?>
 
-        <!-- EL MEJOR DESPACHO HOME / SECCION 2 -->
-        <?php
-            include get_template_directory() . '/assets/modulos/modulo-boxinfo/loop-modulo-boxinfo.php';
-        ?>
+    <!-- EL MEJOR DESPACHO HOME / SECCION 3 -->
+    <?php
+        include get_template_directory() . '/assets/modulos/modulo-boxinfo/loop-modulo-boxinfo.php';
+    ?>
 
-        <!-- SERVICIOS / SECCION 3 -->
-        <?php
-            include get_template_directory() . '/assets/modulos/modulo-service/service.php';
-        ?>
+    <!-- SERVICIOS / SECCION 4 -->
+    <?php
+        include get_template_directory() . '/assets/modulos/modulo-service/service.php';
+    ?>
 
-        <!-- SEGUIMIENTO DE PEDIDOS -->
-        <?php
-            include get_template_directory() . '/assets/modulos/modulo-posters/loop-posters.php';
-        ?>
+    <!-- SEGUIMIENTO DE PEDIDOS 5 -->
+    <?php
+        include get_template_directory() . '/assets/modulos/modulo-posters/loop-posters.php';
+    ?>
 
-        <!-- ESTAMOS INTEGRADOS A / SECCION 4 -->
-        <?php
-            include get_template_directory() . '/assets/modulos/modulo-multibanner/multibanner.php';
-        ?>
+    <!-- ESTAMOS INTEGRADOS A / SECCION 6 -->
+    <?php
+        include get_template_directory() . '/assets/modulos/modulo-multibanner/multibanner.php';
+    ?>
 
-        <!-- ¡PARA QUE NO LA PIENSES TANTO! / SECCION 5 -->
-        <?php
-            include get_template_directory() . '/assets/modulos/modulo-multibanner2/multibanner2.php';
-        ?>
-   
-        <!-- EN PALABRAS DE CLIENTES / SECCION 5 -->
-        <?php
-            include get_template_directory() . '/assets/modulos/modulo-carrusel/carrusel.php';
-        ?>
+    <!-- ¡PARA QUE NO LA PIENSES TANTO! / SECCION 7 -->
+    <?php
+        include get_template_directory() . '/assets/modulos/modulo-multibanner2/multibanner2.php';
+    ?>
 
-        <!-- REPORTAJES -->
-        <?php
-            include get_template_directory() . '/assets/modulos/modulo-microbox/loop-microbox.php';
-        ?>
+    <!-- EN PALABRAS DE CLIENTES / SECCION 8 -->
+    <?php
+        include get_template_directory() . '/assets/modulos/modulo-carrusel/carrusel.php';
+    ?>
 
-        <!-- PORQUE TRABAJAR CON NOSOTROS -->
-        <?php
-            include get_template_directory() . '/assets/modulos/modulo-infobox/loop-infobox.php';
-        ?>
+    <!-- REPORTAJES 9 -->
+    <?php
+        include get_template_directory() . '/assets/modulos/modulo-microbox/loop-microbox.php';
+    ?>
 
-        <!-- BANNER FOOTER -->
-        <?php
-            include get_template_directory() . '/assets/modulos/modulo-banner/loop-banner.php';
-        ?>
+    <!-- PORQUE TRABAJAR CON NOSOTROS 10 -->
+    <?php
+        include get_template_directory() . '/assets/modulos/modulo-infobox/loop-infobox.php';
+    ?>
+
+    <!-- BANNER FOOTER 11 -->
+    <?php
+        include get_template_directory() . '/assets/modulos/modulo-banner/loop-banner.php';
+    ?>
 
 </main><!-- #main -->
 

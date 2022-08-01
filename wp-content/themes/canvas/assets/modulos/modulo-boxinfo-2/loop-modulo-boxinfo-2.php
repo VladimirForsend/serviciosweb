@@ -8,7 +8,7 @@
     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
     $post_per_page = 12; // -1 shows all posts
     $args = array(
-        'post_type' => 'boxinfo',
+        'post_type' => 'boxinfo_2',
         'orderby' => 'date',
         'order' => 'ASC',
         'paged' => $paged,
@@ -21,22 +21,23 @@
             <div class="col-12 col-md-6 mx-auto">
                 <!--productos destacados-->
                 <ul class="py-5 m-0">
-                    <a style="background-color:<?php the_field('color_de_fondo_bloque_web');?>;" class="py-5 d-flex justify-content-center align-items-center flex-column" href="<?php the_field('link_layout'); ?>">
-                        <figure class="tarjeta-contenedor-boxinfo <?php the_field('display'); ?> <?php the_field('tipo_de_columna'); ?>  <?php the_field('alineacion_de_los_elementos'); ?>" href="<?php the_field('link_layout'); ?>">
-                            <img style="z-index: 99;max-width: 350px;" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" alt="<?php echo get_the_title(); ?>">
+                    <a style="background-color:<?php the_field('color_de_fondo_bloque_web');?>;" class="py-5 d-flex justify-content-center align-items-center flex-column">
+                        <figure class="tarjeta-contenedor-boxinfo" >
+                            <img style="z-index: 99;max-width: 450px;" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" alt="<?php echo get_the_title(); ?>">
                         </figure>
                     </a>
                 </ul>
             </div>
             <div class="col-12 col-md-6 mx-auto d-flex justify-content-start align-items-center">
-                <figcaption class="<?php the_field('alinear_texto'); ?>">
+                <figcaption class="">
                     <h4 style="    
                     font-size: 2rem;
                     color: #6200ff;
                     font-weight: bolder;
                     margin-bottom: 1rem;
-                    "><?php echo get_the_title(); ?></h4>
-                    <p class="boxinfo-text"><?php echo get_the_excerpt(); ?></p>
+                    max-width: 500px;
+                    "><?php the_field('titulo_proposito'); ?></h4>
+                    <p class="boxinfo-text"><?php the_field('texto_proposito'); ?></p>
                 </figcaption>
             </div>
         </div>

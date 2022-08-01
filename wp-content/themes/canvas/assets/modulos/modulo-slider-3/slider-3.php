@@ -9,33 +9,34 @@
         <h1 style="
         position: absolute;
         top: 15%;
-        left: 10%;
+        left: 55%;
         font-size: 4vw;
-        color: white;
+        color: #6200ff;
         z-index: 99;
         font-weight: bolder;
         line-height: 1.2;
         padding: 0.5rem 0.5rem 1rem 0;
-        ">Despachamos<br> buenas<br> experiencias</h1>
+        ">Genera<br> ingresos<br> despachando</h1>
 
-        <h3 style="
+        <p style="
         position: absolute;
-        top: 53%;
-        left: 10%;
-        color: white;
+        top: 55%;
+        left: 55%;
         z-index: 99;
-        background-color: #6200ff;
+        color: #1F1F1F;
         line-height: 1.5;
         padding: 0.5rem 1rem 1rem 0;
-        font-size: 2vw;
-        ">99% de efectividad en las entregas<br/> Somos el primer Last mile con propósito</h3>
-        <a style="text-decoration: none;" href=""><button class="action-button">Comenzar a despachar</button></a>
+        font-size: 1vw;
+        max-width:40vw;
+        ">“Únete a la primera flota de despachadores Seniors donde tu experiencia es nuestra mejor garantía de servicio.”</p>
+        <a style="text-decoration: none;" href=""><button class="action-button">Postular Ahora</button></a>
+
         <?php $active = true;
         $temp = $wp_query;
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $post_per_page = 5; // -1 shows all posts
         $args = array(
-            'post_type' => 'slideshow',
+            'post_type' => 'slideshow_3',
             'orderby' => 'date',
             'order' => 'ASC',
             'paged' => $paged,
@@ -47,9 +48,9 @@
 
                 <div class="carousel-item <?php if ($active) { print("active"); }; ?>">
                     <?php $active = false; ?>
-                    <a class="w-100" <?php $linkslide = get_field('link_del_banner'); if(!empty($linkslide)){?>href="<?php the_field('link_del_banner'); ?>"<?php }; ?>>
+                    <a class="w-100" <?php $linkslide = get_field('link_del_banner_3'); if(!empty($linkslide)){?>href="<?php the_field('link_del_banner_3'); ?>"<?php }; ?>>
                         <!--imagen mobile-->
-                        <?php $image = get_field('imagen_mobile'); $image2 = get_field('imagen_escritorio'); ?>
+                        <?php $image = get_field('imagen_mobile_3'); $image2 = get_field('imagen_escritorio_3'); ?>
                         <?php if (!empty($image)) : ?>
                             <img class="<?php if(!empty($image2)){ ?>d-sm-none<?php }; ?>" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                         <?php endif; ?>

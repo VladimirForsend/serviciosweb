@@ -1,7 +1,7 @@
 .action-button {
     position: absolute;
-    top: 72%;
-    left: 10%;
+    top: 68%;
+    left: 55%;
     background: #94fc01;
     border: #94fc01;
     z-index: 99;
@@ -14,8 +14,8 @@
 
 .action-button:hover {
     position: absolute;
-    top: 72%;
-    left: 10%;
+    top: 68%;
+    left: 55%;
     background: #a4ff23;
     border: #a4ff23;
     z-index: 99;

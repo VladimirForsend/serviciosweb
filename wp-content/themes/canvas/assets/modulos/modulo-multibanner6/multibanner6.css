@@ -1,0 +1,51 @@
+.circle-white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vw;
+    width: 10vw;
+    background: #ebebeb;
+    border-radius: 100%;
+}
+
+.circle-purple-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vw;
+    width: 10vw;
+    background: #6200ff;
+    border-radius: 100%;
+}
+
+.titulo-impacto2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.circle-purple-1 .titulo-impacto2 {
+    color: #96ff00;
+}
+
+.circle-purple-1:hover .titulo-impacto2 {
+    color: #6200ff;
+}
+
+.circle-white .titulo-impacto2 {
+    color: #6200ff;
+}
+
+.text-impacto-2 {
+    text-align: left;
+}
+
+.picture-impacto2 {
+    height: 30vw;
+    width: 30vw;
+    background: #96ff00;
+    border-radius: 100%;
+    margin: 0 0 0 auto;
+    padding: 1rem;
+    z-index: 99;
+}

@@ -3,8 +3,8 @@
 function boxinfo_3_register() {
 
     $labels = array(
-        'name' => _x('Unete a servisenior', 'post type general name'),
-        'singular_name' => _x('Unete a senior', 'post type singular name'),
+        'name' => _x('ServiSeniors 2: Únete', 'post type general name'),
+        'singular_name' => _x('ServiSeniors 2: Únete', 'post type singular name'),
         'add_new' => _x('Agregar banner de categoría', 'slideshow_two item'),
         'add_new_item' => __('Agregar bloque web'),
         'edit_item' => __('Editar bloque web'),
@@ -27,7 +27,7 @@ function boxinfo_3_register() {
         'capability_type' => 'post',
         'menu_icon'  => 'dashicons-grid-view',
         'hierarchical' => false,
-        'menu_position' => null,
+        'menu_position' => 51,
         /*'taxonomies'	=> array( 'categoria-boxinfo_3', 'etiqueta-boxinfo_3', ), */
         'supports' => array('title', 'thumbnail', 'excerpt'),
         'rewrite' => array('slug' => 'boxinfo_3', 'with_front' => false)

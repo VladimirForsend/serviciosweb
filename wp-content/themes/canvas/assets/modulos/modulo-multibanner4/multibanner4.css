@@ -1,0 +1,191 @@
+#multibannerb .multibanner-titulo{
+    position: relative; 
+    overflow: hidden;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#multibannerb .multibanner-titulo::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #656563;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+div.small-line {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #6101ff;
+    margin: 0 auto;
+}
+
+.circle-purple {
+    background: #b486ff;
+    height: 8vw;
+    width: 8vw;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    z-index: 99;
+}
+
+.circle-green {
+    height: 14vw;
+    width: 14vw;
+    background: #96ff00;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    z-index: 99;
+}
+
+.circle-purple-2 {
+    background: #6200ff;
+    height: 25vw;
+    width: 25vw;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    z-index: 99;
+    padding: 1rem;
+    position: relative;
+}
+
+.titulo-purple {
+    font-size: 2rem;
+    color: #6100ff;
+    width: 50%;
+    margin-left: 1rem;
+    font-weight: bolder;
+    margin: 0 auto;
+}
+
+.circle-purple .titulo-burbuja, .circle-purple-1 .titulo-burbuja {
+    color: #96ff00;
+    font-weight: bolder;
+}
+
+.circle-purple-2 .titulo-burbuja {
+    color: #96ff00;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1;
+}
+
+.circle-purple .text-burbuja, .circle-purple-1 .text-burbuja, .circle-purple-2 .text-burbuja{
+    color: #fff;
+    padding: 0 15px;
+}
+
+.circle {
+    transition: .5s;
+}
+
+.circle:hover {
+    background-color: #96ff00;
+    transform: scale(1.1);
+}
+
+.circle:hover .titulo-burbuja, .circle:hover .text-burbuja {
+    color: #6200ff!important;
+    font-weight: bolder;
+}
+
+.circle-purple h6.titulo-burbuja {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.circle-green h6.titulo-burbuja {
+    font-size: 2rem;
+    text-align: center;
+    color: #6100ff;
+}
+
+h6.titulo {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 700;
+    color: #6100ff;
+}
+
+h6.titulo-white {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+p.text-burbuja {
+    text-align: center;
+}
+
+.striped-border { 
+    border: 1px dashed #000;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 60%;
+}
+
+.circle-purple-2:after {
+    animation-delay: 1s;
+}
+
+.circle-purple-2:before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 1px solid #6200ff;
+    border-radius: 50%;
+    animation: animate 2s linear infinite;
+    animation-delay: .7s;
+    margin: 2rem;
+    z-index: -1;
+}
+
+.circle-purple-2:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: .5px solid #6200ff;
+    border-radius: 50%;
+    animation: animate 1.4s linear infinite;
+    margin: 2rem;
+    z-index: -1;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+
+@media (max-width:787px){
+    #multibannerb .multibanner-contenedor .banner a{
+        display: unset;
+    }
+}

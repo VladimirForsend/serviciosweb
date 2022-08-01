@@ -215,6 +215,27 @@ include get_template_directory() . '/assets/modulos/modulo-slider-2/core-slider-
 // 2.- MEJOR DESPACHO
 include get_template_directory() . '/assets/modulos/modulo-boxinfo-2/core-modulo-boxinfo-2.php';
 
+// 3.- NUESTRA HISTORIA
+include get_template_directory() . '/assets/modulos/modulo-multibanner4/core-multibanner4.php';
+
+// 4.- OTROS SERVICIOS
+
+
+// 5.- IMPACTO SOCIAL A LA FECHA
+include get_template_directory() . '/assets/modulos/modulo-multibanner5/core-multibanner5.php';
+
+// 6.- IMPACTO A SENIORS
+include get_template_directory() . '/assets/modulos/modulo-multibanner6/core-multibanner6.php';
+
+// 7.- REPORTAJES
+include get_template_directory() . '/assets/modulos/modulo-microbox-2/core-microbox-2.php';
+
+// 8.- REPORTAJES
+include get_template_directory() . '/assets/modulos/modulo-microbox-3/core-microbox-3.php';
+
+// 9.- REPORTAJES
+include get_template_directory() . '/assets/modulos/modulo-banner/core-banner-2.php';
+
 // PAGINA DESPACHADORES
 // 1.- SLIDERHOME
 include get_template_directory() . '/assets/modulos/modulo-slider-3/core-slider-3.php';

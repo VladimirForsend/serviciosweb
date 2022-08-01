@@ -17,49 +17,48 @@ get_header();
  ?>
 <main id="primary" class="">
 
-        <!-- 1.- SLIDER INICIAL -->
-        <?php
-            include get_template_directory() . '/assets/modulos/modulo-slider-2/slider-2.php';
-        ?>
+     <!-- 1.- SLIDER INICIAL -->
+     <?php
+          include get_template_directory() . '/assets/modulos/modulo-slider-2/slider-2.php';
+     ?>
 
-        <!-- 2.- ServiSeniors -->
-        <?php
-             include get_template_directory() . '/assets/modulos/modulo-boxinfo-2/loop-modulo-boxinfo-2.php';
-        ?>
+     <!-- 2.- ServiSeniors -->
+     <?php
+          include get_template_directory() . '/assets/modulos/modulo-boxinfo-2/loop-modulo-boxinfo-2.php';
+     ?>
 
-        <?php
-        if (have_posts()) :
+     <!-- 3.- HISTORIA -->
+     <?php
+          include get_template_directory() . '/assets/modulos/modulo-multibanner4/multibanner4.php';
+     ?>
 
-            if (is_home() && !is_front_page()) :
-        ?>
+     <!-- 4.- OTROS SERVICIOS -->
 
-        <?php
-            endif;
+     <!-- 5.- IMPACTO SOCIAL A LA FECHA -->
+     <?php
+          include get_template_directory() . '/assets/modulos/modulo-multibanner5/multibanner5.php';
+     ?>
 
-            /* Start the Loop */
-            while (have_posts()) :
+     <!-- 6.- IMPACTO A LOS SENIORS -->
+     <?php
+          include get_template_directory() . '/assets/modulos/modulo-multibanner6/multibanner6.php';
+     ?>
 
-                the_post();
+     <!-- 7.- REPORTAJES -->
+     <?php
+          include get_template_directory() . '/assets/modulos/modulo-microbox-2/loop-microbox-2.php';
+     ?>
 
-                /*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-                get_template_part('template-parts/content-somos', get_post_type());
+     <!-- 8.- PREMIOS Y RECONOCIMIENTOS -->
+     <?php
+          include get_template_directory() . '/assets/modulos/modulo-microbox-3/loop-microbox-3.php';
+     ?>
 
-            endwhile;
+     <!-- 9.- BANNER FOOTER -->
+     <?php
+          include get_template_directory() . '/assets/modulos/modulo-banner/loop-banner.php';
+     ?>
 
-            the_posts_navigation();
-
-        else :
-
-            get_template_part('template-parts/content', 'none');
-
-        endif;
-        ?>
-
- 
 </main><!-- #main -->
 
 <?php

@@ -1,0 +1,7 @@
+#reportajes img.imagen:hover {
+    transform: scale(1.2);
+}
+
+#reportajes img.imagen {
+    transition: .5s;
+}

@@ -8,7 +8,7 @@
     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
     $post_per_page = 12; // -1 shows all posts
     $args = array(
-        'post_type' => 'boxinfo',
+        'post_type' => 'boxinfo_3',
         'orderby' => 'date',
         'order' => 'ASC',
         'paged' => $paged,
