@@ -22,9 +22,19 @@ get_header();
         include get_template_directory() . '/assets/modulos/modulo-slider-3/slider-3.php';
     ?>
 
-    <!-- 2.- ServiSeniors -->
+    <!-- 2.- ServiSeniors ÚNETE -->
     <?php
         include get_template_directory() . '/assets/modulos/modulo-boxinfo-3/loop-modulo-boxinfo-3.php';
+    ?>
+
+    <!-- 3.- PLANES -->
+    <?php
+        include get_template_directory() . '/assets/modulos/modulo-cards/cards.php';
+    ?>
+
+    <!-- 4.- BENEFICIOS -->
+    <?php
+        include get_template_directory() . '/assets/modulos/modulo-infobox2/loop-infobox2.php';
     ?>
 
 </main><!-- #main -->

@@ -104,10 +104,6 @@ register_taxonomy(
 			'rewrite' => array( 'slug' => 'etiqueta-infobox' ),
 		)
 	); 
-
-
-
-
 }
 add_action( 'init', 'etiqueta_infobox' );
 

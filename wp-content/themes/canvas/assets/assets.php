@@ -242,3 +242,9 @@ include get_template_directory() . '/assets/modulos/modulo-slider-3/core-slider-
 
 // 2.- MEJOR DESPACHO
 include get_template_directory() . '/assets/modulos/modulo-boxinfo-3/core-modulo-boxinfo-3.php';
+
+// 3.- PLANES
+include get_template_directory() . '/assets/modulos/modulo-cards/core-cards.php';
+
+// 4.- BENEFICIOS
+include get_template_directory() . '/assets/modulos/modulo-infobox2/core-infobox2.php';

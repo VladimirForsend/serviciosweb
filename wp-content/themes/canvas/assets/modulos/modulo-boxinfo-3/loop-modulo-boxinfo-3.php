@@ -18,6 +18,23 @@
 
     if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
         <div class="row">
+            <div class="col-12 col-md-6 ms-auto d-flex justify-content-end align-items-center">
+                <figcaption class="<?php the_field('alinear_texto'); ?>">
+                    <h4 style="    
+                    font-size: 2.5rem;
+                    color: #6200ff;
+                    font-weight: bolder;
+                    margin-bottom: 1rem;
+                    "><?php echo get_the_title(); ?></h4>
+                    <p class="boxinfo-text"><?php echo get_the_excerpt(); ?></p>
+                    <ul class="list-senior p-0 m-0">
+                        <p style="font-size: 1rem;">¡Postula con nosotros! Si tienes:</p> 
+                        <li>Un citycar, sedán, suv, furgón</li>
+                        <li>Un teléfono con internet</li>
+                        <li>Iniciación de actividades en el sii.cl</li>
+                    </ul>
+                </figcaption>
+            </div>
             <div class="col-12 col-md-6 mx-auto">
                 <!--productos destacados-->
                 <ul class="py-5 m-0">
@@ -28,22 +45,13 @@
                     </a>
                 </ul>
             </div>
-            <div class="col-12 col-md-6 mx-auto d-flex justify-content-start align-items-center">
-                <figcaption class="<?php the_field('alinear_texto'); ?>">
-                    <h4 style="    
-                    font-size: 2.5rem;
-                    color: #6200ff;
-                    font-weight: bolder;
-                    margin-bottom: 1rem;
-                    "><?php echo get_the_title(); ?></h4>
-                    <p class="boxinfo-text"><?php echo get_the_excerpt(); ?></p>
-                    <button class="button-boxinfo"><a style="text-decoration: none;" href="<?php echo esc_url(home_url('/quienes-somos')); ?>">conoce más</a></button>
-                </figcaption>
-            </div>
         </div>
-    <?php
-        endwhile;
-    endif;
-    wp_reset_query();
-    $wp_query = $temp ?>
+
+    <?php endwhile; ?>
+    <?php else : ?>
+        <p class="text-center title-sm">Oops!, Lo sentimos, no hay contenido que mostrar</p>
+    <?php endif;
+        wp_reset_query();
+        $wp_query = $temp 
+    ?>
 </div>
