@@ -3,7 +3,7 @@
 </style>
 
 <div id="premios" class="container py-5">
-	<h3 class="service-title text-center">premios</h3>
+	<h3 class="service-title text-center">Premios y reconocimientos</h3>
 	<div class="small-line mb-5"></div>
 
 	<div class="row">
@@ -24,8 +24,8 @@
 				if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
 						<div class="text-center col-2 mb-3">
-							<a href="<?php echo get_field('link_reportaje'); ?>" target="_blank">
-								<?php $reportaje = get_field('imagen_reportaje'); 
+							<a href="<?php echo get_field('link_premio'); ?>" target="_blank">
+								<?php $reportaje = get_field('logo_premio'); 
 									if( !empty( $reportaje ) ): ?>
 										<img class="imagen" style="height:120px;" src="<?php echo esc_url($reportaje['url']); ?>" alt="<?php echo esc_attr($reportaje['alt']);?>">
 								<?php endif; ?>

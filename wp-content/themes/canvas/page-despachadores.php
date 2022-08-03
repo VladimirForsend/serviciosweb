@@ -37,6 +37,11 @@ get_header();
         include get_template_directory() . '/assets/modulos/modulo-infobox2/loop-infobox2.php';
     ?>
 
+    <!-- 8.- TESTIMONIOS -->
+    <?php
+        include get_template_directory() . '/assets/modulos/modulo-infobox3/loop-infobox3.php';
+    ?>
+
 </main><!-- #main -->
 
 <?php

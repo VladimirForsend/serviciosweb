@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-12 col-md-6 mx-auto">
                 <!--productos destacados-->
-                <ul class="py-5 m-0">
+                <ul class="m-0">
                     <a style="background-color:<?php the_field('color_de_fondo_bloque_web');?>;" class="py-5 d-flex justify-content-center align-items-center flex-column">
                         <figure class="tarjeta-contenedor-boxinfo" >
                             <img style="z-index: 99;max-width: 450px;" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" alt="<?php echo get_the_title(); ?>">

@@ -4,7 +4,7 @@
 // Register Custom Post Type
 add_action( 'init', 'banner_2', 0 );
 
-function banner() {
+function banner_2() {
 
 	$labels = array(
 		'name'                  => _x( 'Quienes somos 9: Banner Footer', 'Post Type General Name', 'banner_2' ),

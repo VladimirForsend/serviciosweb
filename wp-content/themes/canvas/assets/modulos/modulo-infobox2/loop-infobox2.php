@@ -21,7 +21,6 @@
 		if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
 			<div id="beneficios-empresa" class="col-6">
-				<h3 class="beneficios-title text-center">Beneficios para tu empresa</h3>
 				<div class="row mb-3">
 					<div class="beneficios-icon col-3">
 						<?php $imagen = get_field('beneficios_icon_1'); 
@@ -77,7 +76,6 @@
 			</div>
 
 			<div id="beneficios-clientes" class="col-6">
-				<h3 class="beneficios-title text-center">Beneficios para tus clientes</h3>
 				<div class="row mb-3">
 					<div class="beneficios-icon col-3">
 						<?php $imagen6 = get_field('icon_1'); 

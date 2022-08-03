@@ -33,6 +33,9 @@ get_header();
      ?>
 
      <!-- 4.- OTROS SERVICIOS -->
+     <?php
+        include get_template_directory() . '/assets/modulos/modulo-carrusel2/carrusel2.php';
+     ?>
 
      <!-- 5.- IMPACTO SOCIAL A LA FECHA -->
      <?php

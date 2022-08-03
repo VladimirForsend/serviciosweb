@@ -219,7 +219,7 @@ include get_template_directory() . '/assets/modulos/modulo-boxinfo-2/core-modulo
 include get_template_directory() . '/assets/modulos/modulo-multibanner4/core-multibanner4.php';
 
 // 4.- OTROS SERVICIOS
-
+include get_template_directory() . '/assets/modulos/modulo-carrusel2/core-carrusel2.php';
 
 // 5.- IMPACTO SOCIAL A LA FECHA
 include get_template_directory() . '/assets/modulos/modulo-multibanner5/core-multibanner5.php';
@@ -233,8 +233,8 @@ include get_template_directory() . '/assets/modulos/modulo-microbox-2/core-micro
 // 8.- REPORTAJES
 include get_template_directory() . '/assets/modulos/modulo-microbox-3/core-microbox-3.php';
 
-// 9.- REPORTAJES
-include get_template_directory() . '/assets/modulos/modulo-banner/core-banner-2.php';
+// 9.- BANNER FOOTER
+include get_template_directory() . '/assets/modulos/modulo-banner-2/core-banner-2.php';
 
 // PAGINA DESPACHADORES
 // 1.- SLIDERHOME
@@ -248,3 +248,6 @@ include get_template_directory() . '/assets/modulos/modulo-cards/core-cards.php'
 
 // 4.- BENEFICIOS
 include get_template_directory() . '/assets/modulos/modulo-infobox2/core-infobox2.php';
+
+// 8.- TESTIMONIOS
+include get_template_directory() . '/assets/modulos/modulo-infobox3/core-infobox3.php';
