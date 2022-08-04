@@ -1,7 +1,7 @@
 /*logo carrusel*/
 #carrusel_logos .carousel {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     overflow: hidden;
     border-radius: 5px;

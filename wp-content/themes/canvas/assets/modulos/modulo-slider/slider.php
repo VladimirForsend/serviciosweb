@@ -24,12 +24,12 @@
         left: 10%;
         color: white;
         z-index: 99;
-        background-color: #6200ff;
+        background-color: #6300ff;
         line-height: 1.5;
         padding: 0.5rem 1rem 1rem 0;
         font-size: 2vw;
         ">99% de efectividad en las entregas<br/> Somos el primer Last mile con propósito</h3>
-        <a style="text-decoration: none;" href=""><button class="action-button">Comenzar a despachar</button></a>
+        <a style="text-decoration: none;" href=""><button class="action-button">Ok, quiero saber más</button></a>
         
         <?php 
         $active = true;

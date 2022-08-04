@@ -11,25 +11,26 @@
         top: 15%;
         left: 55%;
         font-size: 4vw;
-        color: #6200ff;
+        color: #ffffff;
         z-index: 99;
         font-weight: bolder;
         line-height: 1.2;
-        padding: 0.5rem 0.5rem 1rem 0;
+        padding: 0.5rem 0.5rem 1rem;
+        background: #6300ff;
         ">Genera<br> ingresos<br> despachando</h1>
 
         <p style="
         position: absolute;
-        top: 55%;
+        top: 53%;
         left: 55%;
         z-index: 99;
-        color: #1F1F1F;
+        color: #ffffff;
         line-height: 1.5;
-        padding: 0.5rem 1rem 1rem 0;
+        padding: 0.5rem 1rem 1rem 0.5rem;
         font-size: 1vw;
-        max-width:40vw;
+        max-width: 37vw;
         ">“Únete a la primera flota de despachadores Seniors donde tu experiencia es nuestra mejor garantía de servicio.”</p>
-        <a style="text-decoration: none;" href=""><button class="action-button">Postular Ahora</button></a>
+        <a style="text-decoration: none;" href=""><button class="action-button">Postular para despachar</button></a>
 
         <?php $active = true;
         $temp = $wp_query;

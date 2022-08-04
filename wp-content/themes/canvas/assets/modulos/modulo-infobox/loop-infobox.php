@@ -38,7 +38,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row mb-3">
+				<div class="row">
 					<div class="infobox-icon col-3">
 						<?php $imagen2 = get_field('infobox_icon_2'); 
 							if( !empty( $imagen2 ) ): ?>
@@ -54,7 +54,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row mb-3">
+				<div class="row">
 					<div class="infobox-icon col-3">
 						<?php $imagen3 = get_field('infobox_icon_3'); 
 							if( !empty( $imagen3 ) ): ?>
@@ -70,7 +70,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row mb-3">
+				<div class="row">
 					<div class="infobox-icon col-3">
 						<?php $imagen4 = get_field('infobox_icon_4'); 
 							if( !empty( $imagen4 ) ): ?>
@@ -86,7 +86,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row mb-3">
+				<div class="row">
 					<div class="infobox-icon col-3">
 						<?php $imagen5 = get_field('infobox_icon_5'); 
 							if( !empty( $imagen5 ) ): ?>
@@ -106,7 +106,7 @@
 
 			<div id="infobox-clientes" class="col-6">
 				<h3 class="infobox-title text-center">Beneficios para tus clientes</h3>
-				<div class="row mb-3">
+				<div class="row">
 					<div class="infobox-icon col-3">
 						<?php $imagen6 = get_field('icon_1'); 
 							if( !empty( $imagen6 ) ): ?>
@@ -122,7 +122,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row mb-3">
+				<div class="row">
 					<div class="infobox-icon col-3">
 						<?php $imagen7 = get_field('icon_2'); 
 							if( !empty( $imagen7 ) ): ?>
@@ -138,7 +138,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row mb-3">
+				<div class="row">
 					<div class="infobox-icon col-3">
 						<?php $imagen8 = get_field('icon_3'); 
 							if( !empty( $imagen8 ) ): ?>
@@ -154,7 +154,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row mb-3">
+				<div class="row">
 					<div class="infobox-icon col-3">
 						<?php $imagen9 = get_field('icon_4'); 
 							if( !empty( $imagen9 ) ): ?>

@@ -27,7 +27,7 @@
 							<a href="<?php echo get_field('link_reportaje'); ?>" target="_blank">
 								<?php $reportaje = get_field('imagen_reportaje'); 
 									if( !empty( $reportaje ) ): ?>
-										<img class="imagen" style="height:120px;" src="<?php echo esc_url($reportaje['url']); ?>" alt="<?php echo esc_attr($reportaje['alt']);?>">
+										<img class="imagen" style="height:80px;" src="<?php echo esc_url($reportaje['url']); ?>" alt="<?php echo esc_attr($reportaje['alt']);?>">
 								<?php endif; ?>
 							</a>
 						</div><!-- .banner_area home -->

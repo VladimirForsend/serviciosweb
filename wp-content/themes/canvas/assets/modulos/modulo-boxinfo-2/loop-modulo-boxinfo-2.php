@@ -32,7 +32,7 @@
                 <figcaption class="">
                     <h4 style="    
                     font-size: 2rem;
-                    color: #6200ff;
+                    color: #6300ff;
                     font-weight: bolder;
                     margin-bottom: 1rem;
                     max-width: 500px;

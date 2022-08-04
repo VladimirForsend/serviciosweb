@@ -20,7 +20,7 @@
 }
 
 .menu-footer h5 {
-    color: #6200ff;
+    color: #6300ff;
 }
 
 footer .menu-footer.menu-tipo a {
@@ -33,5 +33,5 @@ footer .menu-footer.menu-tipo a {
 }
 
 li.wp-block-pages-list__item:hover a {
-    color: #6200ff;
+    color: #6300ff;
 }

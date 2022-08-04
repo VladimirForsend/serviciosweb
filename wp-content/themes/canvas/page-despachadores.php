@@ -22,6 +22,11 @@ get_header();
         include get_template_directory() . '/assets/modulos/modulo-slider-3/slider-3.php';
     ?>
 
+    <!-- CAROUSEL LOGOS 2 -->
+    <?php
+        include get_template_directory() . '/assets/modulos/modulo-carrusel-reviews/reviews.php';
+    ?>
+
     <!-- 2.- ServiSeniors ÚNETE -->
     <?php
         include get_template_directory() . '/assets/modulos/modulo-boxinfo-3/loop-modulo-boxinfo-3.php';
@@ -35,6 +40,11 @@ get_header();
     <!-- 4.- BENEFICIOS -->
     <?php
         include get_template_directory() . '/assets/modulos/modulo-infobox2/loop-infobox2.php';
+    ?>
+
+    <!-- 7.- NOS HACE DIFERENTES -->
+    <?php
+        include get_template_directory() . '/assets/modulos/modulo-boxinfo-4/loop-modulo-boxinfo-4.php';
     ?>
 
     <!-- 8.- TESTIMONIOS -->

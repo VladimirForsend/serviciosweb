@@ -32,7 +32,7 @@
                 <figcaption class="<?php the_field('alinear_texto'); ?>">
                     <h4 style="    
                     font-size: 2.5rem;
-                    color: #6200ff;
+                    color: #6300ff;
                     font-weight: bolder;
                     margin-bottom: 1rem;
                     "><?php echo get_the_title(); ?></h4>

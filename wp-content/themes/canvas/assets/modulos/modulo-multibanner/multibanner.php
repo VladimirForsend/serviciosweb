@@ -22,7 +22,7 @@ if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
     
     <div class="multibanner-contenedor row">
 
-        <div class="row banner mt-5 mb-3">
+        <div class="row justify-content-center banner mt-5 mb-3">
             <a class="logos-card col-12 col-md-6 col-lg-3">  
                 <?php $imagen = get_field('logo_plataforma'); 
                     if( !empty( $imagen ) ): ?>
@@ -48,7 +48,7 @@ if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
                     <?php endif; ?>
             </a>
         </div>
-        <div class="row banner mb-3">
+        <div class="row justify-content-center banner mb-3">
             <a class="logos-card col-12 col-md-6 col-lg-3">  
                 <?php $imagen5 = get_field('logo_plataforma_5'); 
                     if( !empty( $imagen5 ) ): ?>
@@ -74,7 +74,7 @@ if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
                     <?php endif; ?>
             </a>
         </div>
-        <div class="row banner mb-3">
+        <div class="row justify-content-center banner mb-3">
             <a class="logos-card col-12 col-md-6 col-lg-3">  
                 <?php $imagen9 = get_field('logo_plataforma_9');
                     if( !empty( $imagen9 ) ): ?>
@@ -100,7 +100,7 @@ if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
                     <?php endif; ?>
             </a>
         </div>
-        <div class="row banner mb-3">
+        <div class="row justify-content-center banner mb-3">
             <a class="logos-card col-12 col-md-6 col-lg-3">  
                 <?php $imagen13 = get_field('logo_plataforma_13'); 
                     if( !empty( $imagen13 ) ): ?>
@@ -141,8 +141,9 @@ if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
                 </div>
             </div>
         </div>
-        <div class="col-6 d-flex align-items-center justify-content-center ps-4">
+        <div class="col-6 d-flex flex-column align-items-start justify-content-center ps-4">
             <p class="m-0 multibanner-text"><?php the_field('texto_otro'); ?></p>
+            <a class="mt-2" style="text-decoration: none;" href="<?php the_field('link_button'); ?>"><button class="button-boxinfo"><?php the_field('texto_button'); ?></button></a>
         </div>
     </div>
 </div>

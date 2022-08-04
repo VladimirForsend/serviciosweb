@@ -21,7 +21,7 @@ div.small-line {
 
 .titulo-purple {
     font-size: 2rem;
-    color: #6100ff;
+    color: #6300ff;
     width: 50%;
     margin-left: 1rem;
     font-weight: bolder;
@@ -43,7 +43,7 @@ div.small-line {
 }
 
 .circle:hover .titulo-burbuja, .circle:hover .text-burbuja {
-    color: #6200ff!important;
+    color: #6300ff!important;
     font-weight: bolder;
 }
 
@@ -56,7 +56,7 @@ h6.titulo {
     font-size: 1rem;
     text-align: center;
     font-weight: 700;
-    color: #6100ff;
+    color: #6300ff;
 }
 
 p.text-burbuja {

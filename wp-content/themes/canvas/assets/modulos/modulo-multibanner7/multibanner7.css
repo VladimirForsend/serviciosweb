@@ -35,7 +35,7 @@
 
 .titulo-purple {
     font-size: 2rem;
-    color: #6100ff;
+    color: #6300ff;
     width: 50%;
     margin-left: 1rem;
     font-weight: bolder;
@@ -53,7 +53,7 @@
 }
 
 .circle-purple {
-    background: #6200ff;
+    background: #6300ff;
     height: 200px;
     width: 200px;
     border-radius: 100%;
@@ -75,20 +75,20 @@
 }
 
 .circle-white .text-burbuja, .circle-white-1 .text-burbuja{
-    color: #6200ff;
+    color: #6300ff;
     padding: 0 15px;
 }
 
 .circle-white .titulo-burbuja, .circle-white-1 .titulo-burbuja {
     font-size: 2rem;
     text-align: center;
-    color: #6200ff;
+    color: #6300ff;
     font-weight: bolder;
 }
 
 .circle-purple-1 {
     margin: 0;
-    background: #6200ff;
+    background: #6300ff;
     height: 180px;
     width: 180px;
     border-radius: 100%;
@@ -103,7 +103,7 @@
 }
 
 .circle-purple-2 {
-    background: #6200ff;
+    background: #6300ff;
     height: 200px;
     width: 200px;
     border-radius: 100%;
@@ -138,7 +138,7 @@
 }
 
 .circle:hover .titulo-burbuja, .circle:hover .text-burbuja {
-    color: #6200ff!important;
+    color: #6300ff!important;
     font-weight: bolder;
 }
 

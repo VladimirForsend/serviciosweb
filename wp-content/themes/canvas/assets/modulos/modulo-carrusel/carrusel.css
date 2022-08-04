@@ -29,26 +29,26 @@
 
 .carrusel-card:hover {
     transform: scale(1.1);
-    border: 2px solid #6200ff;
+    border: 2px solid #6300ff;
     box-shadow: 0px 3px 5px rgba(10,10,10,30%);
 }
 
 #carrusel .testimonio-imagen {
     position: absolute;
     top: -70px;
-    left: 50px;    
-    max-width: 200px;
-    max-height: 200px;
+    left: 100px;
+    max-width: 100px;
+    max-height: 100px;
     border-radius: 10rem;
     box-shadow: 0px 3px 5px rgb(10 10 10 / 30%);
 }
 
 #carrusel .testimonio-name {
     font-size: 1.2rem;
-    color: #6200ff;
+    color: #6300ff;
     font-weight: 900;
     text-decoration: none;
-    margin-top: 8rem;
+    margin-top: 2rem;
     margin-bottom: 0;
 }
 
@@ -68,7 +68,7 @@
 
 #carrusel .comillas {
     font-size: 4rem;
-    color: #6200ff;
+    color: #6300ff;
     font-family: cursive;
 }
 

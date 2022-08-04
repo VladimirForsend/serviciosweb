@@ -29,7 +29,7 @@
         font-size: 1vw;
         max-width:40vw;
         ">“A través de la economía colaborativa y la tecnología, conectamos oportunidades laborales flexibles para personas sobre 50 años, quienes hoy tienen grandes dificultades para encontrar oportunidades en el mercado tradicional.”</p>
-        <a style="text-decoration: none;" href=""><button class="action-button">Quiero saber más</button></a>
+        <a style="text-decoration: none;" href="#saber-mas"><button class="action-button">Quiero saber más</button></a>
 
         <?php $active = true;
         $temp = $wp_query;

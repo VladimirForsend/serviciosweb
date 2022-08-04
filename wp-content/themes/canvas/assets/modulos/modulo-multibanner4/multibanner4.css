@@ -48,7 +48,7 @@ div.small-line {
 }
 
 .circle-purple-2 {
-    background: #6200ff;
+    background: #6300ff;
     height: 25vw;
     width: 25vw;
     border-radius: 100%;
@@ -99,7 +99,7 @@ div.small-line {
 }
 
 .circle:hover .titulo-burbuja, .circle:hover .text-burbuja {
-    color: #6200ff!important;
+    color: #6300ff!important;
     font-weight: bolder;
 }
 
@@ -151,7 +151,7 @@ p.text-burbuja {
     top: 5px;
     right: 5px;
     bottom: 5px;
-    border: 1px solid #6200ff;
+    border: 1px solid #6300ff;
     border-radius: 50%;
     animation: animate 2s linear infinite;
     animation-delay: .7s;
@@ -166,7 +166,7 @@ p.text-burbuja {
     top: 5px;
     right: 5px;
     bottom: 5px;
-    border: .5px solid #6200ff;
+    border: .5px solid #6300ff;
     border-radius: 50%;
     animation: animate 1.4s linear infinite;
     margin: 2rem;

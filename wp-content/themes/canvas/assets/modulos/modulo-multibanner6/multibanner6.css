@@ -14,7 +14,7 @@
     align-items: center;
     height: 10vw;
     width: 10vw;
-    background: #6200ff;
+    background: #6300ff;
     border-radius: 100%;
 }
 
@@ -29,11 +29,11 @@
 }
 
 .circle-purple-1:hover .titulo-impacto2 {
-    color: #6200ff;
+    color: #6300ff;
 }
 
 .circle-white .titulo-impacto2 {
-    color: #6200ff;
+    color: #6300ff;
 }
 
 .text-impacto-2 {

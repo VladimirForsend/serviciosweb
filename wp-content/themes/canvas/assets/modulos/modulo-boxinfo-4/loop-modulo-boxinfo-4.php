@@ -1,14 +1,14 @@
 <style>
-    <?php include get_template_directory() . '/assets/modulos/modulo-boxinfo-3/modulo-boxinfo-3.css'; ?>
+    <?php include get_template_directory() . '/assets/modulos/modulo-boxinfo-4/modulo-boxinfo-4.css'; ?>
 </style>
 
-<div id="saber-mas" class="container-fluid contenedor-boxinfo bg-white">
+<div class="container-fluid contenedor-boxinfo bg-white">
     <?php $active = true;
     $temp = $wp_query;
     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
     $post_per_page = 12; // -1 shows all posts
     $args = array(
-        'post_type' => 'boxinfo_3',
+        'post_type' => 'boxinfo_4',
         'orderby' => 'date',
         'order' => 'ASC',
         'paged' => $paged,
@@ -22,7 +22,7 @@
                 <figcaption class="<?php the_field('alinear_texto'); ?>">
                     <h4 style="    
                     font-size: 2.5rem;
-                    color: #6300ff;
+                    color: #6200ff;
                     font-weight: bolder;
                     margin-bottom: 1rem;
                     "><?php echo get_the_title(); ?></h4>

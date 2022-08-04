@@ -2,6 +2,22 @@
     background-color: #efefef;
 }
 
+div#infobox-empresa {
+    padding: 0px 2rem;
+}
+
+div#infobox-clientes {
+    padding: 0px 2rem;
+}
+
+#comercio-infobox .infobox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
 .iconos_home {
     display: flex;
     flex-direction: row;
@@ -60,8 +76,6 @@
     letter-spacing: -.03rem;
 }
 
-#comercio-infobox .infobox-iconos {}
-
 #comercio-infobox .infobox-iconos a {
     text-decoration: none;
 }
@@ -92,6 +106,6 @@
 }
 
 .infobox-title.text-center {
-    color: #6200ff;
+    color: #6300ff;
     font-size: 2rem;
 }
